@@ -9,6 +9,6 @@
 
   display: flex;
   flex-direction: column;
-  align-items: center; /* horizontal center */
-  padding-top: 250px;  /* space for navbar */
+  align-items: center; 
+  padding-top: 170px;  
 }

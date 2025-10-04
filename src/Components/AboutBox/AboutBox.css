@@ -8,43 +8,57 @@
   box-shadow: 0 8px 25px rgba(0,0,0,0.4);
   overflow: hidden;
 
-  /* Slide-in from left */
   transform: translateX(-150%);
   opacity: 0;
   transition: transform 1s ease, opacity 1s ease;
 
-  margin-top: 50px; /* space from navbar (or previous element) */
+  margin-top: 50px;
 }
 
-/* slide-in animation */
 .about-box.slide-in {
   transform: translateX(0);
   opacity: 1;
 }
 
-/* left/right halves */
-.about-left { flex: 1; display: flex; align-items: center; justify-content: center; }
-.about-left img { width: 100%; max-width: 400px; height: auto; border-radius: 10px; }
-.about-right { flex: 1; padding: 30px; display: flex; flex-direction: column; justify-content: center; }
-.about-right h2 { margin-bottom: 15px; }
-.about-right p { line-height: 1.5; font-size: 18px; }
+.about-left {
+    flex: 1; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.about-left img {
+    width: 100%; 
+    max-width: 400px; 
+    height: auto; 
+    border-radius: 10px;
+}
+
+.about-right {
+    flex: 1; 
+    padding: 30px; 
+    display: flex; 
+    flex-direction: 
+    column; 
+    justify-content: center; 
+}
+
+.about-right h2 {
+    margin-bottom: 15px;
+}
+
+.about-right p {
+    line-height: 1.5; 
+    font-size: 18px;
+}
 
 @media (max-width: 900px) {
   .about-box {
     flex-direction: column;
     width: 90%;
     align-items: flex-start;
-    background: none; /* remove desktop bg */
+    background: none;
     padding: 0;
-  }
-
-  .about-top {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: rgba(15, 23, 42, 0.95);
-    /* Mobile-only: top half height = image height */
-    height: fit-content;
   }
 
   .about-left {
@@ -52,13 +66,12 @@
     display: flex;
     justify-content: flex-start;
     background-color: rgb(15, 15, 15) 90%;
-    backdrop-filter: blur(2px); /* blur the background behind the div */
-    -webkit-backdrop-filter: blur(2px)
-    
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px) 
   }
 
   .about-left img {
-    max-width: 250px; /* smaller image */
+    max-width: 250px;
     height: auto;
   }
 
@@ -66,13 +79,5 @@
     width: 100%;
     color: white;
     background-color: rgba(15, 23, 42, 0.95);
-  }
-
-  .about-bottom {
-    background-color: white;
-    color: rgba(121, 139, 182, 0.95);
-    padding: 20px;
-    text-align: center;
-    font-size: 16px;
   }
 }
