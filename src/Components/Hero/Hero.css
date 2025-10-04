@@ -1,8 +1,39 @@
-.hero{
+/* .hero{
     width: 100%;
     min-height: 100vh;
     background: url('../../assets/IMG_8391.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
+} */
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: url('../../assets/IMG_8391.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  position: relative; /* needed for absolute positioning of the box */
+}
+
+/* Slide-in box */
+.slide-box {
+  position: absolute;
+  top: 7%;              /* vertical center */
+  left: 0;               /* start off-screen to the left */
+  transform: translateX(-100%) translateY(-50%);
+  background-color: rgba(15, 23, 42, 0.9); /* semi-transparent dark background */
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: transform .8s ease, opacity 0.8s ease;
+  opacity: 0;
+  max-width: 300px;
+}
+
+.slide-box.slide-in {
+  transform: translateX(20px) translateY(-50%); /* slides in slightly from left */
+  opacity: 1;
 }

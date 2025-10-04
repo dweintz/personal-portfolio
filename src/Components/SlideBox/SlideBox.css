@@ -1,0 +1,17 @@
+.slide-box {
+  width: 300px;
+  padding: 20px;
+  background-color: #0f172a; /* dark navy */
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transform: translateX(-100%); /* start off-screen */
+  opacity: 0;
+  transition: transform 1.5s ease, opacity .8s ease;
+  margin: 20px;
+}
+
+.slide-box.slide-in {
+  transform: translateX(0); /* slide to normal position */
+  opacity: 1;
+}
