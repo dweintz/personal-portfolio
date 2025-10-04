@@ -3,6 +3,7 @@ import Navbar from './Components/Navbar/Navbar'
 import Hero from './Components/Hero/Hero'
 import SlideBox from './Components/SlideBox/SlideBox'
 
+
 const App = () => {
   return (
     <div>

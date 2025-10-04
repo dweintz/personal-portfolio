@@ -20,7 +20,7 @@
 /* Slide-in box */
 .slide-box {
   position: absolute;
-  top: 7%;              /* vertical center */
+  top: 25%;              /* vertical center */
   left: 0;               /* start off-screen to the left */
   transform: translateX(-100%) translateY(-50%);
   background-color: rgba(15, 23, 42, 0.9); /* semi-transparent dark background */
