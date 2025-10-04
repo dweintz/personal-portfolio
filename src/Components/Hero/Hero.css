@@ -12,3 +12,9 @@
   align-items: center; 
   padding-top: 200px;  
 }
+
+@media (max-width: 900px) {
+  .hero {
+    height: 100vh; /* full screen height on mobile */
+  }
+}
