@@ -15,6 +15,7 @@
 
 @media (max-width: 900px) {
   .hero {
-    height: 100vh; /* full screen height on mobile */
+    height: 120vh; /* full screen height on mobile */
+    margin-bottom: 20px;
   }
 }

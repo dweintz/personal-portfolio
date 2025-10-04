@@ -56,9 +56,10 @@
   .about-box {
     flex-direction: column;
     width: 90%;
-    align-items: flex-start;
+    align-items: stretch;
     background: none;
     padding: 0;
+    margin-bottom: 0px;
   }
 
   .about-left {
@@ -79,5 +80,8 @@
     width: 100%;
     color: white;
     background-color: rgba(15, 23, 42, 0.95);
+    box-sizing: border-box;
   }
+
+  
 }
