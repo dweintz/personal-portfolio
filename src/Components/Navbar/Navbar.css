@@ -22,7 +22,26 @@ nav ul {
 }
 
 nav ul li {
-    font-size: 20px;
+  display: inline-block;
+  list-style: none;
+  margin: 5px 15px;
+  font-size: 20px;
+  position: relative;
+}
+
+nav ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background: white; /* 👈 match your text color */
+  transition: width 0.3s ease;
+}
+
+nav ul li:hover::after {
+  width: 100%;
 }
 
 .container{
