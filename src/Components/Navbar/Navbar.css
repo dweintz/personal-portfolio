@@ -11,6 +11,8 @@ nav {
     align-items: center;
     justify-content: center;
     z-index: 10;
+
+    --navbar-height: 600px
 }
 
 nav ul {
