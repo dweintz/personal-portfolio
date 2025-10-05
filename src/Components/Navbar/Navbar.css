@@ -49,6 +49,11 @@ nav ul li:hover::after {
   padding-right: 10%
 }
 
+.container ul li a {
+  text-decoration: none;
+  color: white;
+}
+
 @media (max-width: 900px) {
   nav ul {
     flex-direction: column; 

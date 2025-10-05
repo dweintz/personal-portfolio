@@ -1,17 +1,25 @@
 import React from 'react'
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar'
-import AboutBox from './Components/AboutBox/AboutBox'
 import Footer from './Components/Footer/Footer'
 
+// new pages
+import Home from './Pages/Home/Home';
+import WorkExperience from './Pages/WorkExperience/WorkExperience';
+import Projects from './Pages/Projects/Projects';
+import AboutMe from './Pages/AboutMe/AboutMe';
 
 const App = () => {
   return (
     <div className="app">
       <Navbar/>
       <main className="main-content">
-        <section className="about-section">
-          <AboutBox />
-        </section>
+        <Routes>
+          <Route path="/personal-portfolio/home" element={<Home />} />
+          <Route path="/personal-portfolio/work" element={<WorkExperience />} />
+          <Route path="/personal-portfolio/projects" element={<Projects />} />
+          <Route path="/personal-portfolio/about" element={<AboutMe />} />
+        </Routes>
       </main>
       <Footer/>
     </div>
