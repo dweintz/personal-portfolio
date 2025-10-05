@@ -1,20 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Outfit", sans-serif;
 }
 
-body{
-  background: #0f172a;
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url('src/assets/IMG_8391.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-a{
-  text-decoration: none;
-  color: inherit;
-  line-height: 1;
-  cursor: pointer;
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
 }
 
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  padding-bottom: 50px; 
+}
