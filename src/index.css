@@ -12,7 +12,7 @@ html, body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-image: url('src/assets/IMG_8391.jpg');
+  background-image: url('/IMG_8391.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
