@@ -1,6 +1,6 @@
 {
   "name": "personal_portfolio",
-  "homepage": "https://dweintz.github.io/personal-portfolio/home",
+  "homepage": "https://dweintz.github.io/personal-portfolio",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
