@@ -9,59 +9,42 @@
 }
 
 html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
   height: 100%;
-  overflow-x: hidden;
-  
-  /* Handle iOS Safari viewport quirks */
-  min-height: 100vh;              /* fallback */
-  min-height: 100svh;             /* small viewport */
-  min-height: 100dvh;             /* dynamic viewport */
-  min-height: -webkit-fill-available; /* older Safari */
-}
-
-/* Respect safe areas for content */
-body {
-  padding-top: env(safe-area-inset-top);
-  padding-right: env(safe-area-inset-right);
-  padding-left: env(safe-area-inset-left);
+  width: 100%;
 }
 
 .app {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  min-height: 100svh;
   min-height: 100dvh;
-  min-height: -webkit-fill-available;
   position: relative;
 }
 
-/* Fullscreen background image */
+body {
+  min-height: 100dvh; /* dynamic viewport height for Safari */
+  display: flex;
+  flex-direction: column;
+  padding-top: env(safe-area-inset-top);
+}
+
 .background-image {
   position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
-  width: 100%;
-  height: 100%;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100dvh;
   background-image: url('/IMG_8391.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   z-index: -1;
-  pointer-events: none;
-  transform: translateZ(0); /* helps Safari rendering */
 }
 
 .main-content {
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding-top: calc(20px + env(safe-area-inset-top));
-  padding-left: env(safe-area-inset-left);
-  padding-right: env(safe-area-inset-right);
-  padding-bottom: env(safe-area-inset-bottom);
+  padding-top: 20px; /* space for navbar on desktop */
 }
 
 .about-section {
