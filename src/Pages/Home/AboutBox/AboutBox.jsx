@@ -27,7 +27,7 @@ const AboutBox = () => {
         </p>
         <p><br></br>
           I built this website using React as a fun way to practice my front-end development skills. 
-          Checkout my Work Experience, Projects, and About Me pages to learn more about my experience and interests.
+          Check out my Work Experience, Projects, and About Me pages to learn more about my experience and interests.
         </p>
       </div>
     </div>
