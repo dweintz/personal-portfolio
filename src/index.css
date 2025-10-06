@@ -10,30 +10,43 @@
 html, body {
   height: 100%;
   width: 100%;
-  margin: 0;
-  padding: 0;
-  background-image: url('/IMG_8391.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .app {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; 
+  min-height: 100vh;
+  position: relative; /* Needed so z-index works */
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/IMG_8391.jpg'); /* Put your image in public/ folder */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1; /* Behind everything */
 }
 
 .main-content {
   flex: 1;
   display: flex;
   flex-direction: column;
+  padding-top: 80px; /* Avoid overlapping with navbar */
 }
 
 .about-section {
   display: flex;
   justify-content: center;
-  align-items: flex-start; 
-  padding-bottom: 50px; 
+  align-items: flex-start;
+  padding-bottom: 50px;
+}
+
+/* Optional: ensure footer sticks to bottom if content is short */
+footer {
+  margin-top: auto;
 }

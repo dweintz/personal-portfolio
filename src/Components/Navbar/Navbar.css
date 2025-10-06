@@ -55,6 +55,10 @@ nav ul li:hover::after {
 }
 
 @media (max-width: 900px) {
+  nav {
+    position: relative;
+  }
+
   nav ul {
     flex-direction: column; 
     gap: 18px;             

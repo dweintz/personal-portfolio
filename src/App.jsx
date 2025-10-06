@@ -12,6 +12,7 @@ import AboutMe from './Pages/AboutMe/AboutMe';
 const App = () => {
   return (
     <div className="app">
+      <div className="background-image"></div>
       <Navbar/>
       <main className="main-content">
         <Routes>
