@@ -37,7 +37,7 @@ html, body {
   top: 0;
   left: 0;
   width: 100vw;
-  height: calc(100dvh + env(safe-area-inset-top) + env(safe-area-inset-bottom));
+  height: 100dvh;
   background-image: url('/IMG_8391.jpg');
   background-size: cover;
   background-position: center top;
