@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-/* General reset and base styles */
+/* ----------------------
+   General Reset & Base
+---------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -13,47 +15,81 @@ html, body {
   width: 100%;
 }
 
+/* ----------------------
+   App Container
+---------------------- */
 .app {
   display: flex;
   flex-direction: column;
-  min-height: 100dvh;
+  min-height: 100dvh; /* full device height, dynamic for Safari */
   position: relative;
+  padding-top: env(safe-area-inset-top); /* content starts below notch */
+  padding-bottom: env(safe-area-inset-bottom); /* space for bottom bar */
 }
 
-body {
-  min-height: 100dvh; /* dynamic viewport height for Safari */
-  display: flex;
-  flex-direction: column;
-  padding-top: env(safe-area-inset-top);
-}
-
+/* ----------------------
+   Background Image
+---------------------- */
 .background-image {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100dvh;
-  background-image: url('/IMG_8391.jpg');
+  height: calc(100dvh + env(safe-area-inset-top) + env(safe-area-inset-bottom));
+  background-image: url('/IMG_8391.jpg'); /* put image in public/ folder */
   background-size: cover;
-  background-position: center;
+  background-position: top center; /* anchors image to top */
   background-repeat: no-repeat;
-  z-index: -1;
+  z-index: -1; /* behind everything */
 }
 
+/* ----------------------
+   Main Content
+---------------------- */
 .main-content {
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding-top: 20px; /* space for navbar on desktop */
+  width: 100%;
 }
 
+/* ----------------------
+   About Section
+---------------------- */
 .about-section {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 
+/* ----------------------
+   Footer
+---------------------- */
 footer {
-  margin-top: auto;
+  margin-top: auto; /* sticks footer to bottom if content is short */
+  padding-bottom: env(safe-area-inset-bottom); /* avoid bottom bar */
+}
+
+/* ----------------------
+   Navbar
+---------------------- */
+nav.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(6px);
+  position: fixed; /* fixed on desktop */
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+@media (max-width: 900px) {
+  nav.container {
+    position: relative; /* scrolls with page on mobile */
+  }
 }
