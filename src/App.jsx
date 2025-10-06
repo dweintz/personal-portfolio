@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Navbar from './Components/Navbar/Navbar'
-import Footer from './Components/Footer/Footer'
+import Navbar from './Components/Navbar/Navbar';
+import Footer from './Components/Footer/Footer';
+import './index.css';
 
-// new pages
+// Pages
 import Home from './Pages/Home/Home';
 import WorkExperience from './Pages/WorkExperience/WorkExperience';
 import Projects from './Pages/Projects/Projects';
@@ -13,7 +14,7 @@ const App = () => {
   return (
     <div className="app">
       <div className="background-image"></div>
-      <Navbar/>
+      <Navbar />
       <main className="main-content">
         <Routes>
           <Route path="/personal-portfolio/" element={<Home />} />
@@ -22,9 +23,9 @@ const App = () => {
           <Route path="/personal-portfolio/about" element={<AboutMe />} />
         </Routes>
       </main>
-      <Footer/>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
