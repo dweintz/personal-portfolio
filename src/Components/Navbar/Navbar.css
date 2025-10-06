@@ -57,6 +57,7 @@ nav ul li:hover::after {
 @media (max-width: 900px) {
   nav {
     position: relative;
+    margin-bottom: 20px;
   }
 
   nav ul {

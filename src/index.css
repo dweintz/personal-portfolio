@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-/* ----------------------
-   General Reset & Base
----------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -15,23 +12,17 @@ html, body {
   width: 100%;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
-/* ----------------------
-   App Container
----------------------- */
 .app {
   display: flex;
   flex-direction: column;
-  min-height: 100dvh; /* full device height, dynamic for Safari */
+  min-height: 100dvh;
   position: relative;
-  padding-top: env(safe-area-inset-top); /* content starts below notch */
-  padding-bottom: env(safe-area-inset-bottom); /* space for bottom bar */
+  padding-top: env(safe-area-inset-top); 
 }
 
-/* ----------------------
-   Background Image
----------------------- */
 .background-image {
   position: fixed;
   top: 0;
@@ -45,10 +36,6 @@ html, body {
   z-index: -1;
 }
 
-
-/* ----------------------
-   Main Content
----------------------- */
 .main-content {
   flex: 1;
   display: flex;
@@ -56,9 +43,6 @@ html, body {
   width: 100%;
 }
 
-/* ----------------------
-   About Section
----------------------- */
 .about-section {
   display: flex;
   justify-content: center;
@@ -66,17 +50,11 @@ html, body {
   padding-bottom: 50px;
 }
 
-/* ----------------------
-   Footer
----------------------- */
 footer {
-  margin-top: auto; /* sticks footer to bottom if content is short */
-  padding-bottom: env(safe-area-inset-bottom); /* avoid bottom bar */
+  margin-top: auto;
+  padding-bottom: env(safe-area-inset-bottom); 
 }
 
-/* ----------------------
-   Navbar
----------------------- */
 nav.container {
   width: 100%;
   display: flex;
@@ -93,6 +71,6 @@ nav.container {
 
 @media (max-width: 900px) {
   nav.container {
-    position: relative; /* scrolls with page on mobile */
+    position: relative; 
   }
 }
