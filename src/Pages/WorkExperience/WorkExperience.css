@@ -1,0 +1,183 @@
+.work-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  color: white;
+  text-align: left;
+}
+
+.work-title-box {
+  width: 100%;
+  max-width: 800px; /* match your .work-container */
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  padding: 20px 40px;
+  backdrop-filter: blur(8px);
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 50px;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+.work-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+
+.work-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.work-box {
+  background-color: rgba(15, 23, 42, 0.9); /* same as your about box */
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  padding: 25px 30px;
+  position: relative;
+  backdrop-filter: blur(6px);
+}
+
+.work-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.work-company {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.work-logo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+.work-role {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.work-date {
+  font-size: 1rem;
+  opacity: 0.85;
+  margin-bottom: 12px;
+}
+
+.work-desc {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.95;
+  margin-top: 25px;
+}
+
+.work-meta {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.work-date,
+.work-location {
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+.work-location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 12px;
+}
+
+.work-location::before {
+  content: "📍";
+  font-size: 1.1rem;
+}
+
+.work-date::before {
+    content: " 📅 ";
+    font-size: 1.1rem;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+/* Individual skill pill */
+.skill-pill {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: white;
+  backdrop-filter: blur(4px);
+  transition: all 0.2s ease;
+}
+
+.skill-pill:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-150%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(150%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-left {
+  animation: slideFromLeft 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.slide-in-right {
+  animation: slideFromRight 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+
+@media (max-width: 900px) {
+    .work-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 20px;
+        color: white;
+        text-align: left;
+        margin-top: 150px;
+    }
+}
