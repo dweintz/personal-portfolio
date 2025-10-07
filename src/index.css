@@ -27,8 +27,8 @@ html, body {
   flex-direction: column;
   min-height: 100svh;
   position: relative;
-  padding-top: env(safe-area-inset-top, 0px);
-  padding-bottom: env(safe-area-inset-bottom, 0px);
+  /* padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px); */
 }
 
 /* --- Background image --- */
@@ -64,7 +64,8 @@ html, body {
 /* --- Footer --- */
 footer {
   margin-top: auto;
-  padding-bottom: env(safe-area-inset-bottom, 0px);
+  /* padding-bottom: env(safe-area-inset-bottom, 0px); */
+  background-color: rgba(15, 23, 42, 0.9);
 }
 
 /* --- Navbar --- */
@@ -85,5 +86,6 @@ nav.container {
 @media (max-width: 900px) {
   nav.container {
     position: relative;
+    background-color: rgba(15, 23, 42, 0.9);
   }
 }
