@@ -53,7 +53,7 @@ nav.container {
   justify-content: center;
   align-items: center;
   padding: 15px 20px;
-  background-color: rgba(15, 23, 42, 0.9);
+  background-color: rgba(15, 23, 42,1);
   backdrop-filter: blur(6px);
   position: fixed;
   top: 0;
@@ -64,6 +64,6 @@ nav.container {
 @media (max-width: 900px) {
   nav.container {
     position: relative;
-    background-color: rgba(15, 23, 42, 0.9);
+    background-color: rgba(15, 23, 42, 1);
   }
 }

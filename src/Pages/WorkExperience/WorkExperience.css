@@ -2,23 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 90px 20px;
+  padding: 190px 20px;
   color: white;
   text-align: left;
-}
-
-.work-title-box {
-  width: 100%;
-  max-width: 800px; /* match your .work-container */
-  border-radius: 15px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-  padding: 20px 40px;
-  backdrop-filter: blur(8px);
-  text-align: center;
-  margin-bottom: 40px;
-  margin-top: 0px;
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
 }
 
 .work-title {
@@ -26,7 +12,6 @@
   font-weight: 700;
   margin: 0;
 }
-
 
 .work-container {
   display: flex;

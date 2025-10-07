@@ -47,9 +47,6 @@ const WorkExperience = () => {
 
   return (
     <div className="work-page">
-      <div className="work-title-box">
-        <h1 className="work-title">Work Experience</h1>
-      </div>
       <div className="work-container">
         {experiences.map((exp, index) => (
           <div
