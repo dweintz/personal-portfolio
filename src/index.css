@@ -19,7 +19,6 @@ html, body {
   background-repeat: no-repeat;
   background-position: fixed;
   background-attachment: fixed;
-  overflow-x: hidden;
 }
 
 .app {
