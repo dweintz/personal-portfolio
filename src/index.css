@@ -14,7 +14,11 @@ html, body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  background-color: grey;
+  background-image: url('/IMG_8391.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-attachment: fixed;
 }
 
 /* --- App container --- */
