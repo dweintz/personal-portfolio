@@ -2,10 +2,11 @@
   display: flex;
   width: 1050px;
   max-width: 90%;
-  background-color: rgba(15, 23, 42, 0.7);
+  background-color: rgba(15, 23, 42, 0.65);
   color: white;
   border-radius: 15px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  backdrop-filter: blur(6px);
   overflow: hidden;
   margin-top: 200px;
 
@@ -74,6 +75,7 @@
 
   .about-right {
     width: 100%;
-    background-color: rgba(15, 23, 42, 0.95);
+    background-color: rgba(15, 23, 42, 0.65);
+    backdrop-filter: blur(6px);
   }
 }
