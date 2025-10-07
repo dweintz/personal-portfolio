@@ -75,7 +75,7 @@ const AboutMe = () => {
         </div>
         <div className="contact-item">
           <FaGithub size={24} />
-          <span>github.com/donny</span>
+          <span>github.com/dweintz</span>
         </div>
       </div>
     </div>
