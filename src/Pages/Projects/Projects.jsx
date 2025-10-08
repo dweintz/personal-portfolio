@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import './Projects.css';
 import project1Img1 from '../../assets/IMG_8391.jpg';
 import project1Img2 from '../../assets/IMG_8391.jpg';
@@ -6,27 +5,6 @@ import project2Img1 from '../../assets/IMG_8391.jpg';
 import project2Img2 from '../../assets/IMG_8391.jpg';
 
 const Projects = () => {
-  const galleryImages = [
-    { src: project1Img1, caption: 'Project 1: Main view' },
-    { src: project1Img2, caption: 'Project 1: Details' },
-    { src: project2Img1, caption: 'Project 2: Main view' },
-    { src: project2Img2, caption: 'Project 2: Demo' },
-  ];
-
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex(prev => (prev + 1) % galleryImages.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
-
-
-  const nextImage = () => setCurrentIndex(prev => (prev + 1) % galleryImages.length);
-  const prevImage = () => setCurrentIndex(prev => (prev - 1 + galleryImages.length) % galleryImages.length);
-
-
   const projects = [
     {
       title: 'Personal Portfolio Website',
@@ -68,7 +46,7 @@ const Projects = () => {
       <div className="projects-container">
         {projects.map((proj, i) => (
           <div key={i}
-          className={`project-box ${i % 2 === 0 ? 'slide-in-left' : 'slide-in-right'}`}
+          className={`project-box slide-box ${i % 2 === 0 ? '' : 'slide-right'}`}
           >
             <h2 className="project-title">{proj.title}</h2>
             <h3 className="work-role">{proj.role}</h3>

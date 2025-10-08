@@ -2,9 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { FaPhone, FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { useLocation } from 'react-router-dom';
 import './AboutMe.css';
-import photo1 from '../../assets/IMG_0833.jpg';
-import photo2 from '../../assets/IMG_4921.jpg';
-import photo3 from '../../assets/IMG_5558.jpg';
 
 const AboutMe = () => {
   const location = useLocation();
@@ -18,32 +15,9 @@ const AboutMe = () => {
     }
   }, [location]);
 
-  const galleryImages = [
-    { src: photo1, caption: 'Hiking in Linville Gorge, NC' },
-    { src: photo2, caption: 'Hiking in Great Smokey Mountains National Park, TN' },
-    { src: photo3, caption: 'Water skiing in Michigan' },
-  ];
-
   return (
     <div className="about-page">
-      {/* Static Image Gallery */}
-      {/* <div
-        className={`static-gallery slide-in-left ${animate ? 'show' : ''}`}
-        style={{ transitionDelay: '0.2s' }}
-      >
-        {galleryImages.map((imgObj, index) => (
-          <div key={index} className="static-gallery-item">
-            <img src={imgObj.src} alt={`Gallery ${index}`} loading="lazy" />
-            <div className="gallery-caption">{imgObj.caption}</div>
-          </div>
-        ))}
-      </div> */}
-
-      {/* About Me Box */}
-      <div
-        className={`about-box2 slide-in-left ${animate ? 'show' : ''}`}
-        style={{ transitionDelay: '0.4s' }}
-      >
+      <div className={`about-box2 slide-box`}>
         <h2>About Me</h2>
         <p>
           Hi! I’m Donny, a computer engineering student at Purdue University, where I focus on
@@ -57,11 +31,8 @@ const AboutMe = () => {
         </p>
       </div>
 
-      {/* Contact Box */}
       <div
-        className={`contact-box slide-in-right ${animate ? 'show' : ''}`}
-        style={{ transitionDelay: '0.6s' }}
-      >
+        className={`contact-box slide-box ${'slide-right'}`}>
         <div className="contact-item">
           <FaPhone size={24} />
           <span>(513) 815-2765</span>

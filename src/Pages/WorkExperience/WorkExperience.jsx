@@ -1,7 +1,6 @@
 import React from 'react';
 import './WorkExperience.css';
 import geLogo from '../../assets/ge_logo.png';
-import purdueLogo from '../../assets/purdue_logo.png';
 import costcoLogo from '../../assets/costco_logo.png';
 import chipotleLogo from '../../assets/chipotle_logo.png';
 
@@ -51,7 +50,7 @@ const WorkExperience = () => {
         {experiences.map((exp, index) => (
           <div
             key={index}
-            className={`work-box ${index % 2 === 0 ? 'slide-in-left' : 'slide-in-right'}`}
+            className={`work-box slide-box ${index % 2 === 0 ? '' : 'slide-right'}`}
           >
             <div className="work-header">
               <h2 className="work-company">{exp.company}</h2>

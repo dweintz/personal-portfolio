@@ -61,6 +61,21 @@ nav.container {
   z-index: 10;
 }
 
+.slide-box {
+  opacity: 0;
+  transform: translateX(-150%); 
+  transition: transform 0.6s cubic-bezier(0.25, 0.7, 0.2, 1);
+}
+
+.slide-box.slide-right {
+  transform: translateX(150%); 
+}
+
+.slide-box.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 @media (max-width: 900px) {
   nav.container {
     position: relative;

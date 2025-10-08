@@ -1,21 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
 import './AboutBox.css';
 import mePic from '../../../assets/me_no_background.png';
 
 const AboutBox = () => {
-  const [visible, setVisible] = useState(false);
-  const location = useLocation(); // React Router hook
-
-  useEffect(() => {
-    // Reset and re-trigger animation whenever route changes
-    setVisible(false);
-    const timeout = setTimeout(() => setVisible(true), 50); // small delay
-    return () => clearTimeout(timeout);
-  }, [location.pathname]);
-
   return (
-    <div className={`about-box ${visible ? 'slide-in' : ''}`}>
+    <div className={`about-box slide-box`}>
       <div className="about-left">
         <img src={mePic} alt="Me" />
       </div>
