@@ -14,7 +14,7 @@ html, body {
   padding: 0;
   scroll-behavior: smooth;
   background-color: rgba(15, 23, 42, 1);
-  background-image: url('/IMG_8391.jpg');
+  background-image: url('/abstract_mountain4.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: fixed;
@@ -44,7 +44,7 @@ html, body {
 
 footer {
   margin-top: auto;
-  background-color: rgba(15, 23, 42, 1);
+  background-color: rgba(15, 23, 42, 0.9);
 }
 
 nav.container {
