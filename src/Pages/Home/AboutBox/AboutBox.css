@@ -9,22 +9,20 @@
   backdrop-filter: blur(6px);
   overflow: hidden;
   margin-top: 170px;
-
-  transform: translateX(-150%);
-  opacity: 0;
-  transition: transform 1s ease, opacity 1s ease;
+  position: relative;
 }
 
 .about-left {
   flex: 1;
-  display: flex;
-  align-items: left;
-  justify-content: left;
+  position: relative;
 }
 
 .about-left img {
-  width: 100%;
+  position: absolute; 
+  bottom: 0;      
+  left: 0;
   max-width: 300px;
+  max-height: 400px;
   height: auto;
   border-radius: 10px;
 }
@@ -50,25 +48,23 @@
   .about-box {
     flex-direction: column;
     width: 90%;
-    align-items: stretch;
-    background: none;
     margin-top: 30px;
+    background: none;
   }
 
   .about-left {
-    width: 100%;
-    justify-content: flex-start;
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
   }
 
   .about-left img {
+    position: static;  
+    display: block;
     max-width: 250px;
     height: auto;
   }
 
   .about-right {
-    width: 100%;
     background-color: rgba(15, 23, 42, 1);
   }
 }

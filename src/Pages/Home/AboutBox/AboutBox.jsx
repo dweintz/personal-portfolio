@@ -14,8 +14,9 @@ const AboutBox = () => {
           combine computer vision, AI, and embedded systems. I love solving real-world problems with code and electronics!
         </p>
         <p><br></br>
-          I built this website using React as a fun way to practice my front-end development skills. 
-          Check out my Work Experience, Projects, and About Me pages to learn more about my experience and interests.
+          I built this website using React as a fun way to practice my front-end development skills. The website 
+          is still a work in progress and I plan to continue adding and refining content/features. In the meantime, 
+          check out my Work Experience, Projects, and About Me pages to learn more about my experience and interests.
         </p>
       </div>
     </div>
