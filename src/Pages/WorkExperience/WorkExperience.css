@@ -98,6 +98,22 @@
     font-size: 1.1rem;
 }
 
+.work-desc ul {
+  margin-left: 1.5rem;  
+  margin-top: 0.5rem;   
+  padding-left: 1rem;
+  list-style-type: disc; 
+}
+
+.work-desc li {
+  margin-bottom: 0.5rem; 
+  line-height: 1.5;     
+}
+
+.work-desc a {
+  color: #a3c9ff;
+}
+
 .skills-container {
   display: flex;
   flex-wrap: wrap;
@@ -106,7 +122,6 @@
   margin-bottom: 15px;
 }
 
-/* Individual skill pill */
 .skill-pill {
   background-color: rgba(255, 255, 255, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.25);

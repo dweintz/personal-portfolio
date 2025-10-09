@@ -10,13 +10,19 @@ const AboutBox = () => {
       <div className="about-right">
         <h2>Hello!</h2>
         <p>
-          I'm Donny, a Computer Engineering student at Purdue University. I enjoy building projects that
-          combine computer vision, AI, and embedded systems. I love solving real-world problems with code and electronics!
+          I’m Donny, a Computer Engineering Student at Purdue University, 
+          concentrating in AI and machine learning. I’ll be graduating 
+          in May 2026 and am actively seeking opportunities in software 
+          and computer engineering. My primary focus is computer vision, 
+          though I’m also passionate about software systems and 
+          application development.
         </p>
         <p><br></br>
-          I built this website using React as a fun way to practice my front-end development skills. The website 
-          is still a work in progress and I plan to continue adding and refining content/features. In the meantime, 
-          check out my Work Experience, Projects, and About Me pages to learn more about my experience and interests.
+          I built this website using React as a way to explore front-end 
+          development and UI/UX design. It’s still a work in progress, 
+          and I plan on adding more content and features soon. In the 
+          meantime, feel free to browse through the site to learn more 
+          about my experience, projects, and interests outside of work.
         </p>
       </div>
     </div>
