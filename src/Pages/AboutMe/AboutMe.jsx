@@ -25,9 +25,7 @@ const AboutMe = () => {
           active and spending time in nature — running along scenic trails, hiking through forests,
           and going on backpacking adventures whenever I can. I’m also passionate about exploring
           new hobbies, whether that’s experimenting with electronics, working on personal coding
-          projects, or trying out new outdoor challenges. Browse the gallery above to get a
-          glimpse of some of the exciting activities and experiences that make my life both
-          fun and fulfilling!
+          projects, or trying out new outdoor challenges.
         </p>
       </div>
 
