@@ -1,5 +1,4 @@
 import '../WorkExperience.css';
-import './GEManufacturing.css';
 import geLogo from '../../../assets/ge_logo.png';
 
 

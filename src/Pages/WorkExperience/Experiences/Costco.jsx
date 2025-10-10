@@ -1,33 +1,32 @@
 import '../WorkExperience.css';
-import './Chipotle.css';
-import chipotleLogo from '../../../assets/chipotle_logo.png';
+import costcoLogo from '../../../assets/costco_logo.png';
 
 
-const Chipotle = () => {
-  const skills = ['Food service', 'Retail', 'Team work']
+const Costco = () => {
+  const skills = ['Customer Satisfaction', 'Communication', 'Retail']
   
   return (
-        <div className= 'work-box slide-box slide-right'>
+        <div className= 'work-box slide-box'>
         <div className="work-header">
             <h2 className="work-company">
-            Chipotle Mexican Grill
+            Costco Wholesale
             </h2>
-            <img src={chipotleLogo} alt="GE" className="work-logo" />
+            <img src={costcoLogo} alt="GE" className="work-logo" />
         </div>
         <h3 className="work-role">
-            Crew Member
+            Front End Assistant
         </h3>
         <p className="work-date">
-            May 2022 – Aug 2022
+            May 2023 – Jan 2025
         </p>
         <p className="work-location">
             Cincinnati, Ohio
         </p>
         <p className="work-desc">
             <p>
-                In the summer of 2022, I worked as a crew Member at 
-                Chipotle. I worked on morning food prep and serving 
-                customers on the serving line.
+                Worked in a seasonal front-end support role, assisting cashiers, 
+                maintaining the availability of shopping carts for members, 
+                and organizing merchandise in the warehouse.
             </p>
         </p>
         <div className="skills-container">
@@ -39,4 +38,4 @@ const Chipotle = () => {
   );
 };
 
-export default Chipotle;
+export default Costco;

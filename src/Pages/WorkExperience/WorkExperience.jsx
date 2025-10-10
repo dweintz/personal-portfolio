@@ -1,8 +1,8 @@
 import './WorkExperience.css';
-import GEManufacturing from './GEManufacturing/GEManufacturing';
-import GEInspection from './GEInspection/GEInspection';
-import Costco from './Costco/Costco'
-import Chipotle from './Chipotle/Chipotle'
+import GEManufacturing from './Experiences/GEManufacturing';
+import GEInspection from './Experiences/GEInspection';
+import Costco from './Experiences/Costco'
+import Chipotle from './Experiences/Chipotle'
 
 
 const WorkExperience = () => {

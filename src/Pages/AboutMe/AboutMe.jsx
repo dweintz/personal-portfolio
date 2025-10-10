@@ -20,12 +20,11 @@ const AboutMe = () => {
       <div className={`about-box2 slide-box`}>
         <h2>About Me</h2>
         <p>
-          Hi! I’m Donny, a computer engineering student at Purdue University, where I focus on
-          learning and building innovative technology projects. Outside of class, I love staying
-          active and spending time in nature — running along scenic trails, hiking through forests,
-          and going on backpacking adventures whenever I can. I’m also passionate about exploring
-          new hobbies, whether that’s experimenting with electronics, working on personal coding
-          projects, or trying out new outdoor challenges.
+          Hi, I’m Donny, a computer engineering student at Purdue University. 
+          Outside of class, I am passionate about the outdoors. I enjoy 
+          activities like running, hiking, watersports, and backpacking. 
+          In the future, I will add a photo gallery to this page to showcase 
+          some of the cool places I’ve been to. 
         </p>
       </div>
 
