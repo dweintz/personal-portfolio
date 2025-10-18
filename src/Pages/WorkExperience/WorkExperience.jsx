@@ -4,7 +4,6 @@ import GEInspection from './Experiences/GEInspection';
 import Costco from './Experiences/Costco'
 import Chipotle from './Experiences/Chipotle'
 
-
 const WorkExperience = () => {
   return (
     <div className="work-page">

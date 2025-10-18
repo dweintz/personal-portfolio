@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
 import Home from './Pages/Home/Home';
@@ -8,22 +8,8 @@ import Projects from './Pages/Projects/Projects';
 import AboutMe from './Pages/AboutMe/AboutMe';
 import './index.css';
 
+
 const App = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    const boxes = document.querySelectorAll('.slide-box');
-    boxes.forEach((box) => {
-      box.classList.remove('show'); 
-    });
-
-    const timeout = setTimeout(() => {
-      boxes.forEach((box) => box.classList.add('show'));
-    }, 50);
-
-    return () => clearTimeout(timeout);
-  }, [location]);
-
   return (
     <div className="app">
       <Navbar />
