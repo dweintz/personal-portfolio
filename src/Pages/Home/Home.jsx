@@ -1,4 +1,3 @@
-import React from "react";
 import AboutBox from "./AboutBox/AboutBox";
 
 const Home = () => {
