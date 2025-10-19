@@ -1,5 +1,5 @@
 import '../WorkExperience.css';
-import geLogo from '../../../assets/ge_logo.png';
+import geLogo from '../../../assets/logos/ge_logo.png';
 import { FaMapMarkerAlt, FaCalendarAlt } from 'react-icons/fa';
 
 const GEManufacturing = () => {
@@ -8,26 +8,26 @@ const GEManufacturing = () => {
     'Supply Chain', 'CAS Inventory Software']
   
   return (
-        <div className= "work-box slide-box">
-        <div className="work-header">
-            <h2 className="work-company">
+        <div className= "project-box slide-box">
+        <div className="project-header">
+            <h2 className="project-company">
             GE Aerospace
             </h2>
-            <img src={geLogo} alt="GE" className="work-logo" />
+            <img src={geLogo} alt="GE" className="project-logo" />
         </div>
-        <h3 className="work-role">
+        <h3 className="project-role">
             Supply Chain and Manufacturing Intern - Assembly and Test
         </h3>
         <br></br>
         <p className="project-location">
-            <FaMapMarkerAlt style={{ marginRight: '8px', color: '#a3c9ff' }} />
+            <FaMapMarkerAlt className="icon-location"/>
             Evendale, OH
         </p>
         <p className="project-duration">
-            <FaCalendarAlt style={{ marginRight: '8px', color: '#a3c9ff' }} />
+            <FaCalendarAlt className="icon-calendar"/>
             May 2025 – Aug 2025
         </p>
-        <div className="work-desc">
+        <div className="project-desc">
             <p>
                 In the summer of 2025, I worked as a Supply Chain and 
                 Manufacturing Intern at GE Aerospace in the Marine and 
@@ -69,11 +69,11 @@ const GEManufacturing = () => {
                 </ul>
             </p>
             <br></br>
-            <p>
+            <div className='project-links'>
                 Learn more about <a href="https://www.geaerospace.com/military-defense/marine" target="_blank" rel="noopener noreferrer">
                     GE Aerospace Marine & Industrial
                 </a>
-            </p>
+            </div>
         </div>
         <div className="skills-container">
             {skills.map((skill, i) => (

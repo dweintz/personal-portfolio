@@ -1,17 +1,19 @@
 import '../Projects.css';
-import certificate from '../../../assets/OUR_Certificates.pdf';
-import final_presentation from '../../../assets/Pedestrian_Detection_Accident_Avoidance_F24_Final_Presentation.pdf';
-import final_report from '../../../assets/Pedestrian_Detection_Accident_Avoidance_F24_Final_Report-compressed.pdf';
-import poster from '../../../assets/Research_Poster.pdf';
-import pedestrian1 from '../../../assets/pedestrian1.png';
-import pedestrian2 from '../../../assets/pedestrian2.png';
+import certificate from '../../../assets/pedestrian/OUR_Certificates.pdf';
+import final_presentation from '../../../assets/pedestrian/Pedestrian_Detection_Accident_Avoidance_F24_Final_Presentation.pdf';
+import final_report from '../../../assets/pedestrian/Pedestrian_Detection_Accident_Avoidance_F24_Final_Report-compressed.pdf';
+import poster from '../../../assets/pedestrian/Research_Poster.pdf';
+import pedestrian1 from '../../../assets/pedestrian/pedestrian1.png';
+import pedestrian2 from '../../../assets/pedestrian/pedestrian2.png';
 import { FaMapMarkerAlt, FaCalendarAlt } from 'react-icons/fa';
 
 const PedestrianProject = () => {
-  const skills = ['Python', 'Image Processing', 
-    'Histogram of Oriented Gradients', 'Support Vector Machines']
+  const skills = [
+    'Python', 
+    'Image Processing', 
+    'Histogram of Oriented Gradients', 
+    'Support Vector Machines']
 
-  const images = []
   const attachments = [
           { name: 'Project Poster', url: poster },
           { name: 'Project Paper', url: final_report },
@@ -24,19 +26,19 @@ const PedestrianProject = () => {
             <h2 className="project-title">
                 Pedestrian Detection for Crash Avoidance
             </h2>
-            <h3 className="work-role">
+            <h3 className="project-role">
                 Purdue Vertically Integrated Projects - Image Processing Team
             </h3>
             <br></br>
             <p className="project-location">
-                <FaMapMarkerAlt style={{ marginRight: '8px', color: '#a3c9ff' }} />
+                <FaMapMarkerAlt className="icon-location"/>
                 Purdue University
             </p>
             <p className="project-duration">
-                <FaCalendarAlt style={{ marginRight: '8px', color: '#a3c9ff' }} />
+                <FaCalendarAlt className="icon-calendar"/>
                 Aug 2024 – Dec 2024
             </p>
-            <div className="work-desc">
+            <div className="project-desc">
                 <p>
                     As part of the Image Processing and Analysis with 
                     Applications (IPAA) team, I worked with a team to 
@@ -68,20 +70,6 @@ const PedestrianProject = () => {
                 ))}
             </div>
 
-            <div className="project-images">
-                {images.map((img, idx) => (
-                <img
-                    key={idx}
-                    src={img}
-                    alt={`Project ${i} Image ${idx}`}
-                    className="clickable-image"
-                    onClick={() => {
-                    setSelectedImage(img);
-                    setIsLightboxOpen(true);
-                    }}
-                />
-                ))}
-            </div>
             <div className="project-links">
                 {attachments && attachments.map((att, idx) => (
                 <a
@@ -94,13 +82,14 @@ const PedestrianProject = () => {
                 </a>
                 ))}
             </div>
-            <div className="full-images">
-                <p className='work-desc'>
+
+            <div className="project-images">
+                <p className='project-desc'>
                     Results of pedestrian detection and crash
                     avoidance algorithm:
                 </p>
                 <img src={pedestrian1}></img>
-                <p className='work-desc'>
+                <p className='project-desc'>
                     Example of our HOG algorithm:
                 </p>
                 <img src={pedestrian2}></img>

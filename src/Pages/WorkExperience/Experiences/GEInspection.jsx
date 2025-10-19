@@ -1,33 +1,38 @@
 import '../WorkExperience.css';
-import geLogo from '../../../assets/ge_logo.png';
+import geLogo from '../../../assets/logos/ge_logo.png';
 import { FaMapMarkerAlt, FaCalendarAlt } from 'react-icons/fa';
 
 const GEInspection = () => {
-  const skills = ['Python', 'Image Processing', 'CT Imagining', 
-    'Testing', 'Inspection', 'Data Analytics', 
+  const skills = [
+    'Python', 
+    'Image Processing', 
+    'CT Imagining', 
+    'Testing',
+    'Inspection', 
+    'Data Analytics', 
     'Avizo for Industrial Inspection']
   
   return (
-        <div className= 'work-box slide-box slide-right'>
-        <div className="work-header">
-            <h2 className="work-company">
+    <div className= 'project-box slide-box slide-right'>
+        <div className="project-header">
+            <h2 className="project-company">
             GE Aerospace
             </h2>
-            <img src={geLogo} alt="GE" className="work-logo" />
+            <img src={geLogo} alt="GE" className="project-logo" />
         </div>
-        <h3 className="work-role">
+        <h3 className="project-role">
             Inspection Engineering Intern - CT Imaging
         </h3>
         <br></br>
         <p className="project-location">
-            <FaMapMarkerAlt style={{ marginRight: '8px', color: '#a3c9ff' }} />
+            <FaMapMarkerAlt className="icon-location"/>
             Evendale, OH
         </p>
         <p className="project-duration">
-            <FaCalendarAlt style={{ marginRight: '8px', color: '#a3c9ff' }} />
+            <FaCalendarAlt className="icon-calendar"/>
             May 2024 – Aug 2024
         </p>
-        <div className="work-desc">
+        <div className="project-desc">
             <p>
                 In the summer of 2024, I worked as an Inspection 
                 Engineering Intern at GE Aerospace. During my rotation, 
@@ -59,18 +64,22 @@ const GEInspection = () => {
                 </ul>
             </p>
             <br></br>
-            <p>
+
+            <div className='project-links'>
                 Learn more about <a href="https://www.geaerospace.com/news/articles/ge-aerospace-inspection-solutions-team-making-waves-enhanced-safety-and-quality" target="_blank" rel="noopener noreferrer">
                     GE Aerospace Inspection Solutions
                 </a>
-            </p>
+            </div>
+
         </div>
+
         <div className="skills-container">
             {skills.map((skill, i) => (
             <span key={i} className="skill-pill">{skill}</span>
             ))}
         </div>
-        </div>
+
+    </div>
   );
 };
 

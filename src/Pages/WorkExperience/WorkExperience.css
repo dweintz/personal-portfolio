@@ -7,12 +7,6 @@
   text-align: left;
 }
 
-.work-title {
-  font-size: 2.3rem;
-  font-weight: 700;
-  margin: 0;
-}
-
 .work-container {
   display: flex;
   flex-direction: column;
@@ -21,131 +15,8 @@
   max-width: 900px;
 }
 
-.work-box {
-  background-color: rgba(15, 23, 42, 0.65);
-  border-radius: 15px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
-  padding: 25px 30px;
-  position: relative;
-  backdrop-filter: blur(6px);
-}
-
-.work-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.work-company {
-  font-size: 1.7rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.work-logo {
-  height: 50px;
-  width: auto;
-  object-fit: contain;
-}
-
-.work-role {
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin-bottom: 12px;
-}
-
-.work-date {
-  font-size: 1rem;
-  opacity: 0.85;
-  margin-bottom: 12px;
-}
-
-.work-desc {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  opacity: 0.95;
-  margin-top: 25px;
-}
-
-.work-meta {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-  margin-bottom: 12px;
-  flex-wrap: wrap;
-}
-
-.work-date,
-.work-location {
-  font-size: 1rem;
-  opacity: 0.85;
-}
-
-.work-location {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  margin-bottom: 12px;
-}
-
-.work-location::before {
-  content: "📍";
-  font-size: 1.1rem;
-}
-
-.work-date::before {
-    content: " 📅 ";
-    font-size: 1.1rem;
-}
-
-.work-desc ul {
-  margin-left: 1.5rem;  
-  margin-top: 0.5rem;   
-  padding-left: 1rem;
-  list-style-type: disc; 
-}
-
-.work-desc li {
-  margin-bottom: 0.5rem; 
-  line-height: 1.5;     
-}
-
-.work-desc a {
-  color: #a3c9ff;
-}
-
-.skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 35px;
-  margin-bottom: 15px;
-}
-
-.skill-pill {
-  background-color: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  padding: 6px 12px;
-  border-radius: 12px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: white;
-  backdrop-filter: blur(4px);
-  transition: all 0.2s ease;
-}
-
-.skill-pill:hover {
-  background-color: rgba(255, 255, 255, 0.25);
-  transform: translateY(-2px);
-}
-
 @media (max-width: 900px) {
-    .work-page {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 30px 20px;
-        color: white;
-        text-align: left;
-    }
+  .work-page {
+      padding: 30px 20px;  
+  }
 }
