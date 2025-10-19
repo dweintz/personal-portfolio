@@ -1,4 +1,3 @@
-import "../WorkExperience.css";
 import geLogo from "../../../assets/logos/ge_logo.png";
 import { FaMapMarkerAlt, FaCalendarAlt } from "react-icons/fa";
 
@@ -16,7 +15,7 @@ const GEInspection = () => {
   return (
     <div className="project-box slide-box slide-right">
       <div className="project-header">
-        <h2 className="project-company">GE Aerospace</h2>
+        <h2 className="project-title">GE Aerospace</h2>
         <img src={geLogo} alt="GE" className="project-logo" />
       </div>
       <h3 className="project-role">

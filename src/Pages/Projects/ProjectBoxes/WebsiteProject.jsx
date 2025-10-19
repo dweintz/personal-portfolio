@@ -1,4 +1,3 @@
-import "../Projects.css";
 import { FaMapMarkerAlt, FaCalendarAlt } from "react-icons/fa";
 
 const WebsiteProject = () => {

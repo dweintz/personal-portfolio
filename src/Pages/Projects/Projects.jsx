@@ -5,8 +5,8 @@ import PedestrianProject from "./ProjectBoxes/PedestrianProject";
 
 const Projects = () => {
   return (
-    <div className="projects-page">
-      <div className="projects-container">
+    <div className="content-page">
+      <div className="content-container">
         <WebsiteProject />
         <NutritionProject />
         <PedestrianProject />

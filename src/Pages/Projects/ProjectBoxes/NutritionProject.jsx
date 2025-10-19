@@ -1,4 +1,3 @@
-import "../Projects.css";
 import project1Img1 from "../../../assets/nutrition/YOLO.png";
 import handObject from "../../../assets/nutrition/hand_object.png";
 import { FaMapMarkerAlt, FaCalendarAlt } from "react-icons/fa";

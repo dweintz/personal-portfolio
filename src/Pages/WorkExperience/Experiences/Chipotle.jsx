@@ -1,4 +1,3 @@
-import "../WorkExperience.css";
 import chipotleLogo from "../../../assets/logos/chipotle_logo.png";
 import { FaMapMarkerAlt, FaCalendarAlt } from "react-icons/fa";
 
@@ -8,7 +7,7 @@ const Chipotle = () => {
   return (
     <div className="project-box slide-box slide-right">
       <div className="project-header">
-        <h2 className="project-title">Chipotle Mexican Grill</h2>
+    
         <img src={chipotleLogo} alt="GE" className="project-logo" />
       </div>
       <h3 className="project-role">Crew Member</h3>

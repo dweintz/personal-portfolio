@@ -1,4 +1,3 @@
-import "../Projects.css";
 import certificate from "../../../assets/pedestrian/OUR_Certificates.pdf";
 import final_presentation from "../../../assets/pedestrian/Pedestrian_Detection_Accident_Avoidance_F24_Final_Presentation.pdf";
 import final_report from "../../../assets/pedestrian/Pedestrian_Detection_Accident_Avoidance_F24_Final_Report-compressed.pdf";

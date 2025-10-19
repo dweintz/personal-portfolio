@@ -3,7 +3,7 @@ import "./AboutMe.css";
 
 const AboutMe = () => {
   return (
-    <div className="about-page">
+    <div className="content-page">
       <div className={`about-box2 slide-box`}>
         <img src="web_collage.png" className="images"></img>
       </div>

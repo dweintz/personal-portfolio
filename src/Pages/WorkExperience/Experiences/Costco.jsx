@@ -1,4 +1,3 @@
-import "../WorkExperience.css";
 import costcoLogo from "../../../assets/logos/costco_logo.png";
 import { FaMapMarkerAlt, FaCalendarAlt } from "react-icons/fa";
 
@@ -8,7 +7,7 @@ const Costco = () => {
   return (
     <div className="project-box slide-box">
       <div className="project-header">
-        <h2 className="project-company">Costco Wholesale</h2>
+        <h2 className="project-title">Costco Wholesale</h2>
         <img src={costcoLogo} alt="GE" className="project-logo" />
       </div>
       <h3 className="project-role">Front End Assistant</h3>
