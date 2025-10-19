@@ -56,7 +56,7 @@ const WebsiteProject = () => {
           </span>
         ))}
       </div>
-        
+
       <div className="project-links">
         {attachments &&
           attachments.map((att, idx) => (
