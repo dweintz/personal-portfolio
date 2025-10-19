@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
 * {
   margin: 0;
@@ -7,7 +7,8 @@
   font-family: "Outfit", sans-serif;
 }
 
-html, body {
+html,
+body {
   height: 100svh;
   width: 100%;
   margin: 0;
@@ -16,8 +17,8 @@ html, body {
   background-color: rgba(15, 23, 42, 1);
   background-image: linear-gradient(
     to bottom,
-    #8c8e92 30%, 
-    rgb(47, 49, 51) 100% 
+    #8c8e92 30%,
+    rgb(47, 49, 51) 100%
   );
   background-size: cover;
   background-repeat: no-repeat;
@@ -36,7 +37,7 @@ nav.container {
   justify-content: center;
   align-items: center;
   padding: 15px 20px;
-  background-color: rgba(15, 23, 42,1);
+  background-color: rgba(15, 23, 42, 1);
   backdrop-filter: blur(6px);
   position: fixed;
   top: 0;
@@ -65,14 +66,13 @@ nav.container {
   padding-bottom: 50px;
 }
 
-
 /* Project/work experience boxes */
 
 .project-box {
   background-color: rgba(15, 23, 42, 0.65);
   backdrop-filter: blur(6px);
   border-radius: 15px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
   padding: 25px 30px;
   backdrop-filter: blur(6px);
 }
@@ -118,15 +118,15 @@ nav.container {
 }
 
 .project-desc ul {
-  margin-left: 1.5rem;  
-  margin-top: 0.5rem;   
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
   padding-left: 1rem;
-  list-style-type: disc; 
+  list-style-type: disc;
 }
 
 .project-desc li {
-  margin-bottom: 0.5rem; 
-  line-height: 1.5;     
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
 }
 
 .project-images img {
@@ -162,7 +162,6 @@ nav.container {
   color: #a3c9ff;
 }
 
-
 /* Skill boxes */
 
 .skills-container {
@@ -189,7 +188,6 @@ nav.container {
   background-color: rgba(255, 255, 255, 0.25);
   transform: translateY(-2px);
 }
-
 
 /* Sliding box animations */
 

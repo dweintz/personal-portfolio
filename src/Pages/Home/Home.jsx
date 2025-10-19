@@ -1,14 +1,14 @@
-import React from 'react'
-import AboutBox from './AboutBox/AboutBox'
+import React from "react";
+import AboutBox from "./AboutBox/AboutBox";
 
 const Home = () => {
   return (
     <div>
       <section className="about-section">
-          <AboutBox />
+        <AboutBox />
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

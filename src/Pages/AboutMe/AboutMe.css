@@ -8,7 +8,7 @@
 
 .about-box2 {
   background-color: rgba(15, 23, 42, 0.65);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(6px);
   max-width: 900px;
   width: 100%;
@@ -40,7 +40,7 @@
   backdrop-filter: blur(6px);
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
 
 .contact-box h1 {
@@ -73,7 +73,9 @@
 }
 
 .contact-item svg {
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .contact-item:hover svg {
@@ -82,13 +84,13 @@
 
 .slide-in {
   opacity: 0;
-  transform: translateX(-150%); 
+  transform: translateX(-150%);
   transition: all 0.8s ease-out;
 }
 
 .slide-in.show {
   opacity: 1;
-  transform: translateX(0); 
+  transform: translateX(0);
 }
 
 .images {
