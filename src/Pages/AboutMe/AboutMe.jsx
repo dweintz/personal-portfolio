@@ -5,7 +5,7 @@ const AboutMe = () => {
   return (
     <div className="about-page">
       <div className={`about-box2 slide-box`}>
-        <img src="website_collage.png" className='images'></img>
+        <img src="web_collage.png" className='images'></img>
       </div>
       <div className={`about-box2 slide-box slide-right`}>
         <h2>About Me</h2>

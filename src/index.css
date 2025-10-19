@@ -14,13 +14,16 @@ html, body {
   padding: 0;
   scroll-behavior: smooth;
   background-color: rgba(15, 23, 42, 1);
-  background-image: url('/abstract_mountain4.jpg');
+  background-image: linear-gradient(
+    to bottom,
+    #8c8e92 30%, 
+    rgb(47, 49, 51) 100% 
+  );
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: fixed;
   background-attachment: fixed;
+  background-position: center;
 }
-
 .app {
   display: flex;
   flex-direction: column;
