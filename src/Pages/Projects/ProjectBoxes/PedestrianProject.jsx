@@ -37,7 +37,7 @@ const PedestrianProject = () => {
                 Aug 2024 – Dec 2024
             </p>
             <div className="work-desc">
-                <p><br></br>
+                <p>
                     As part of the Image Processing and Analysis with 
                     Applications (IPAA) team, I worked with a team to 
                     develop a pedestrian detector model for crash avoidance. 

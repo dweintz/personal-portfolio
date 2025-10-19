@@ -31,7 +31,7 @@ const NutritionProject = () => {
                 Aug 2025 – Present
             </p>
             <div className="work-desc">
-                <p><br></br>
+                <p>
                     As part of my senior design project on the Image Processing 
                     and Analysis with Applications (IPAA) team, we are working 
                     to design a system to estimate nutritional changes during 

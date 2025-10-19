@@ -27,7 +27,7 @@ const GEInspection = () => {
             <FaCalendarAlt style={{ marginRight: '8px', color: '#a3c9ff' }} />
             May 2024 – Aug 2024
         </p>
-        <p className="work-desc">
+        <div className="work-desc">
             <p>
                 In the summer of 2024, I worked as an Inspection 
                 Engineering Intern at GE Aerospace. During my rotation, 
@@ -64,7 +64,7 @@ const GEInspection = () => {
                     GE Aerospace Inspection Solutions
                 </a>
             </p>
-        </p>
+        </div>
         <div className="skills-container">
             {skills.map((skill, i) => (
             <span key={i} className="skill-pill">{skill}</span>

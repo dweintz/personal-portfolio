@@ -27,7 +27,7 @@ const GEManufacturing = () => {
             <FaCalendarAlt style={{ marginRight: '8px', color: '#a3c9ff' }} />
             May 2025 – Aug 2025
         </p>
-        <p className="work-desc">
+        <div className="work-desc">
             <p>
                 In the summer of 2025, I worked as a Supply Chain and 
                 Manufacturing Intern at GE Aerospace in the Marine and 
@@ -74,7 +74,7 @@ const GEManufacturing = () => {
                     GE Aerospace Marine & Industrial
                 </a>
             </p>
-        </p>
+        </div>
         <div className="skills-container">
             {skills.map((skill, i) => (
             <span key={i} className="skill-pill">{skill}</span>

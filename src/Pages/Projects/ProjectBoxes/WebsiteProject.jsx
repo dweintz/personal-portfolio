@@ -30,7 +30,7 @@ const WebsiteProject = () => {
                 Sep 2025 – Oct 2025
             </p>
             <div className="work-desc">
-                <p><br></br>
+                <p>
                     Developed and deployed the portfolio website you’re 
                     viewing now, built entirely from scratch using React, 
                     HTML, and CSS. 

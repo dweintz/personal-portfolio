@@ -25,13 +25,13 @@ const Chipotle = () => {
             <FaCalendarAlt style={{ marginRight: '8px', color: '#a3c9ff' }} />
             May 2022 – Aug 2022
         </p>
-        <p className="work-desc">
+        <div className="work-desc">
             <p>
                 In the summer of 2022, I worked as a crew Member at 
                 Chipotle. I worked on morning food prep and serving 
                 customers on the serving line.
             </p>
-        </p>
+        </div>
         <div className="skills-container">
             {skills.map((skill, i) => (
             <span key={i} className="skill-pill">{skill}</span>

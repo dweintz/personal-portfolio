@@ -25,13 +25,13 @@ const Costco = () => {
             <FaCalendarAlt style={{ marginRight: '8px', color: '#a3c9ff' }} />
             May 2023 – Jan 2025
         </p>
-        <p className="work-desc">
+        <div className="work-desc">
             <p>
                 Worked in a seasonal front-end support role, assisting cashiers, 
                 maintaining the availability of shopping carts for members, 
                 and organizing merchandise in the warehouse.
             </p>
-        </p>
+        </div>
         <div className="skills-container">
             {skills.map((skill, i) => (
             <span key={i} className="skill-pill">{skill}</span>
