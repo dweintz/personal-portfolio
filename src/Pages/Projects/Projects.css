@@ -29,13 +29,6 @@
   margin-bottom: 10px;
 }
 
-.project-location,
-.project-duration {
-  font-size: 1rem;
-  opacity: 0.85;
-  margin-bottom: 10px;
-}
-
 .project-desc {
   font-size: 1.1rem;
   line-height: 1.6;
@@ -62,8 +55,8 @@
   gap: 10px;
   margin-top: 15px;
   margin-bottom: 15px;
-  max-width: 100%;
-  max-height: 500px;
+  max-width: 80%;
+  max-height: 400px;
   object-fit: contain;
   border-radius: 10px;
 }
@@ -160,5 +153,9 @@
 @media (max-width: 900px) {
   .projects-page {
     padding: 30px 20px;
+  }
+
+  .full-images img {
+    max-width: 100%;
   }
 }

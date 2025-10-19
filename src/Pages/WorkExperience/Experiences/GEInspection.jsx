@@ -1,6 +1,6 @@
 import '../WorkExperience.css';
 import geLogo from '../../../assets/ge_logo.png';
-
+import { FaMapMarkerAlt, FaCalendarAlt } from 'react-icons/fa';
 
 const GEInspection = () => {
   const skills = ['Python', 'Image Processing', 'CT Imagining', 
@@ -18,11 +18,14 @@ const GEInspection = () => {
         <h3 className="work-role">
             Inspection Engineering Intern - CT Imaging
         </h3>
-        <p className="work-date">
-            May 2024 – Aug 2024
+        <br></br>
+        <p className="project-location">
+            <FaMapMarkerAlt style={{ marginRight: '8px', color: '#a3c9ff' }} />
+            Evendale, OH
         </p>
-        <p className="work-location">
-            Evendale, Ohio
+        <p className="project-duration">
+            <FaCalendarAlt style={{ marginRight: '8px', color: '#a3c9ff' }} />
+            May 2024 – Aug 2024
         </p>
         <p className="work-desc">
             <p>

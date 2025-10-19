@@ -1,6 +1,6 @@
 import '../WorkExperience.css';
 import chipotleLogo from '../../../assets/chipotle_logo.png';
-
+import { FaMapMarkerAlt, FaCalendarAlt } from 'react-icons/fa';
 
 const Chipotle = () => {
   const skills = ['Food service', 'Retail', 'Team work']
@@ -16,11 +16,14 @@ const Chipotle = () => {
         <h3 className="work-role">
             Crew Member
         </h3>
-        <p className="work-date">
-            May 2022 – Aug 2022
+        <br></br>
+        <p className="project-location">
+            <FaMapMarkerAlt style={{ marginRight: '8px', color: '#a3c9ff' }} />
+            Cincinnati, OH
         </p>
-        <p className="work-location">
-            Cincinnati, Ohio
+        <p className="project-duration">
+            <FaCalendarAlt style={{ marginRight: '8px', color: '#a3c9ff' }} />
+            May 2022 – Aug 2022
         </p>
         <p className="work-desc">
             <p>

@@ -1,6 +1,7 @@
 import '../Projects.css';
 import project1Img1 from '../../../assets/YOLO.png';
 import handObject from '../../../assets/hand_object.png';
+import { FaMapMarkerAlt, FaCalendarAlt } from 'react-icons/fa';
 
 const NutritionProject = () => {
   const skills = [
@@ -20,11 +21,14 @@ const NutritionProject = () => {
             <h3 className="work-role">
                 Purdue Vertically Integrated Projects - Image Processing Team
             </h3>
+            <br></br>
             <p className="project-location">
-                📍 Purdue University
+                <FaMapMarkerAlt style={{ marginRight: '8px', color: '#a3c9ff' }} />
+                Purdue University
             </p>
             <p className="project-duration">
-                📅 Aug 2025 – Present
+                <FaCalendarAlt style={{ marginRight: '8px', color: '#a3c9ff' }} />
+                Aug 2025 – Present
             </p>
             <div className="work-desc">
                 <p><br></br>
@@ -42,8 +46,8 @@ const NutritionProject = () => {
                         </li>
                         <li>
                             An ingredient detection model based on the 
-                            YOLO framework to identify ingredients a person 
-                            interacts with.
+                            YOLO (You only look once) framework to identify 
+                            ingredients a person interacts with.
                         </li>
                         <li>
                             Database mapping between detected object 
@@ -67,7 +71,6 @@ const NutritionProject = () => {
                     real-time nutrition tracking and visualization.
                 </p>
             </div>
-
             <div className="skills-container">
                 {skills.map((skill, l) => (
                 <span key={l} className="skill-pill">{skill}</span>

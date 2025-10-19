@@ -1,6 +1,6 @@
 import '../WorkExperience.css';
 import geLogo from '../../../assets/ge_logo.png';
-
+import { FaMapMarkerAlt, FaCalendarAlt } from 'react-icons/fa';
 
 const GEManufacturing = () => {
   const skills = ['Python', 'Excel', 'Lean Manufacturing', 
@@ -18,11 +18,14 @@ const GEManufacturing = () => {
         <h3 className="work-role">
             Supply Chain and Manufacturing Intern - Assembly and Test
         </h3>
-        <p className="work-date">
-            May 2025 – Aug 2025
+        <br></br>
+        <p className="project-location">
+            <FaMapMarkerAlt style={{ marginRight: '8px', color: '#a3c9ff' }} />
+            Evendale, OH
         </p>
-        <p className="work-location">
-            Evendale, Ohio
+        <p className="project-duration">
+            <FaCalendarAlt style={{ marginRight: '8px', color: '#a3c9ff' }} />
+            May 2025 – Aug 2025
         </p>
         <p className="work-desc">
             <p>

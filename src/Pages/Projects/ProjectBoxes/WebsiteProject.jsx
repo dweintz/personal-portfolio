@@ -1,5 +1,5 @@
 import '../Projects.css';
-
+import { FaMapMarkerAlt, FaCalendarAlt } from 'react-icons/fa';
 
 const WebsiteProject = () => {
   const skills = [
@@ -20,11 +20,14 @@ const WebsiteProject = () => {
             <h3 className="work-role">
                 Personal Project
             </h3>
+            <br></br>
             <p className="project-location">
-                📍 Purdue University
+                <FaMapMarkerAlt style={{ marginRight: '8px', color: '#a3c9ff' }} />
+                Purdue University
             </p>
             <p className="project-duration">
-                📅 October 2025
+                <FaCalendarAlt style={{ marginRight: '8px', color: '#a3c9ff' }} />
+                Sep 2025 – Oct 2025
             </p>
             <div className="work-desc">
                 <p><br></br>

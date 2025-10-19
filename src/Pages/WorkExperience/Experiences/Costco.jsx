@@ -1,6 +1,6 @@
 import '../WorkExperience.css';
 import costcoLogo from '../../../assets/costco_logo.png';
-
+import { FaMapMarkerAlt, FaCalendarAlt } from 'react-icons/fa';
 
 const Costco = () => {
   const skills = ['Customer Satisfaction', 'Communication', 'Retail']
@@ -16,11 +16,14 @@ const Costco = () => {
         <h3 className="work-role">
             Front End Assistant
         </h3>
-        <p className="work-date">
-            May 2023 – Jan 2025
+        <br></br>
+        <p className="project-location">
+            <FaMapMarkerAlt style={{ marginRight: '8px', color: '#a3c9ff' }} />
+            Cincinnati, OH
         </p>
-        <p className="work-location">
-            Cincinnati, Ohio
+        <p className="project-duration">
+            <FaCalendarAlt style={{ marginRight: '8px', color: '#a3c9ff' }} />
+            May 2023 – Jan 2025
         </p>
         <p className="work-desc">
             <p>

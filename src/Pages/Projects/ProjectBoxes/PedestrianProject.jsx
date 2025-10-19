@@ -5,6 +5,7 @@ import final_report from '../../../assets/Pedestrian_Detection_Accident_Avoidanc
 import poster from '../../../assets/Research_Poster.pdf';
 import pedestrian1 from '../../../assets/pedestrian1.png';
 import pedestrian2 from '../../../assets/pedestrian2.png';
+import { FaMapMarkerAlt, FaCalendarAlt } from 'react-icons/fa';
 
 const PedestrianProject = () => {
   const skills = ['Python', 'Image Processing', 
@@ -26,11 +27,14 @@ const PedestrianProject = () => {
             <h3 className="work-role">
                 Purdue Vertically Integrated Projects - Image Processing Team
             </h3>
+            <br></br>
             <p className="project-location">
-                📍 Purdue University
+                <FaMapMarkerAlt style={{ marginRight: '8px', color: '#a3c9ff' }} />
+                Purdue University
             </p>
             <p className="project-duration">
-                📅 Aug 2024 – Dec 2024
+                <FaCalendarAlt style={{ marginRight: '8px', color: '#a3c9ff' }} />
+                Aug 2024 – Dec 2024
             </p>
             <div className="work-desc">
                 <p><br></br>
