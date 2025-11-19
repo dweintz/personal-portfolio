@@ -25,6 +25,9 @@ const Chipotle = () => {
           In the summer of 2022, I worked as a crew Member at Chipotle. I worked
           on morning food prep and serving customers on the serving line.
         </p>
+        <br />
+        <p>Key Skills:</p>
+        <hr className="section-divider" />
       </div>
 
       <div className="skills-container">

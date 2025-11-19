@@ -26,6 +26,9 @@ const Costco = () => {
           maintaining the availability of shopping carts for members, and
           organizing merchandise in the warehouse.
         </p>
+        <br />
+        <p>Key Skills:</p>
+        <hr className="section-divider" />
       </div>
 
       <div className="skills-container">

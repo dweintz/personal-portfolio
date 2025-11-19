@@ -46,6 +46,9 @@ const WebsiteProject = () => {
           maintainability and scalability. Click the link below to view the
           source code for the site on GitHub.
         </p>
+        <br />
+        <p>Key Skills:</p>
+        <hr className="section-divider" />
       </div>
 
       <div className="skills-container">
@@ -55,7 +58,13 @@ const WebsiteProject = () => {
           </span>
         ))}
       </div>
-
+      
+      <div className="project-desc">
+      <br />
+        <p>Project Resources:</p>
+        <hr className="section-divider" />
+      </div>
+      
       <div className="project-links">
         {attachments &&
           attachments.map((att, idx) => (

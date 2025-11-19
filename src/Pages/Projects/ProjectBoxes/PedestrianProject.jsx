@@ -59,6 +59,9 @@ const PedestrianProject = () => {
         <p>
           Browse the links and images below to learn more about the project.
         </p>
+        <br />
+        <p>Key Skills:</p>
+        <hr className="section-divider" />
       </div>
 
       <div className="skills-container">
@@ -67,6 +70,12 @@ const PedestrianProject = () => {
             {skill}
           </span>
         ))}
+      </div>
+
+      <div className="project-desc">
+      <br />
+        <p>Project Resources:</p>
+        <hr className="section-divider" />
       </div>
 
       <div className="project-links">
@@ -83,8 +92,6 @@ const PedestrianProject = () => {
           Results of pedestrian detection and crash avoidance algorithm:
         </p>
         <img src={pedestrian1}></img>
-        <p className="project-desc">Example of our HOG algorithm:</p>
-        <img src={pedestrian2}></img>
       </div>
     </div>
   );

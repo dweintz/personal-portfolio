@@ -7,8 +7,8 @@ const Projects = () => {
   return (
     <div className="content-page">
       <div className="content-container">
-        <WebsiteProject />
         <NutritionProject />
+        <WebsiteProject />
         <PedestrianProject />
       </div>
     </div>

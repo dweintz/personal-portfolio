@@ -70,6 +70,9 @@ const GEInspection = () => {
             GE Aerospace Inspection Solutions
           </a>
         </div>
+        <br />
+        <p>Key Skills:</p>
+        <hr className="section-divider" />
       </div>
 
       <div className="skills-container">

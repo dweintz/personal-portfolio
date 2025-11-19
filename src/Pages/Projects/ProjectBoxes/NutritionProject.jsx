@@ -67,6 +67,9 @@ const NutritionProject = () => {
           front-end interface for real-time nutrition tracking and
           visualization.
         </p>
+        <br />
+        <p>Key Skills:</p>
+        <hr className="section-divider" />
       </div>
 
       <div className="skills-container">
@@ -75,6 +78,12 @@ const NutritionProject = () => {
             {skill}
           </span>
         ))}
+      </div>
+
+      <div className="project-desc">
+      <br />
+        <p>Project Resources:</p>
+        <hr className="section-divider" />
       </div>
 
       <div className="project-links">

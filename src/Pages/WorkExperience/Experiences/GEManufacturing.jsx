@@ -78,6 +78,9 @@ const GEManufacturing = () => {
             GE Aerospace Marine & Industrial
           </a>
         </div>
+        <br />
+        <p>Key Skills:</p>
+        <hr className="section-divider" />
       </div>
       <div className="skills-container">
         {skills.map((skill, i) => (

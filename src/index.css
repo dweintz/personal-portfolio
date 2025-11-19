@@ -1,10 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mallanna&family=Outfit:wght@100..900&family=TASA+Orbiter:wght@400..800&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 290;
+  font-style: normal;
+  color: #FFFFFF;
 }
 
 html,
@@ -14,12 +18,7 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  background-color: rgba(15, 23, 42, 1);
-  background-image: linear-gradient(
-    to bottom,
-    rgb(108, 112, 122) 30%,
-    rgb(71, 74, 78) 100%
-  );
+  background-color: #E5E9F0;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -28,7 +27,7 @@ body {
 
 footer {
   margin-top: auto;
-  background-color: rgba(15, 23, 42, 0.9);
+  background-color: rgba(11, 25, 40, 1);
 }
 
 nav.container {
@@ -37,7 +36,7 @@ nav.container {
   justify-content: center;
   align-items: center;
   padding: 15px 20px;
-  background-color: rgba(15, 23, 42, 1);
+  background-color: #0D1B2A;
   backdrop-filter: blur(6px);
   position: fixed;
   top: 0;
@@ -66,6 +65,14 @@ nav.container {
   padding-bottom: 50px;
 }
 
+.section-divider {
+  border: none;
+  height: 1px;
+  background: #ccc;
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 4px;
+}
 
 /* Formatting for page content */
 
@@ -91,10 +98,10 @@ nav.container {
 /* Project/work experience boxes */
 
 .project-box {
-  background-color: rgba(15, 23, 42, 0.65);
+  background-color: rgba(11, 25, 40, 0.75);
   backdrop-filter: blur(6px);
-  border-radius: 15px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.6);
   padding: 25px 30px;
   backdrop-filter: blur(6px);
 }
@@ -112,13 +119,13 @@ nav.container {
 }
 
 .project-title {
-  font-size: 1.8rem;
+  font-size: 30px;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
 .project-role {
-  font-size: 1.2rem;
+  font-size: 22px;
   font-weight: 500;
   margin-bottom: 12px;
 }
@@ -127,13 +134,13 @@ nav.container {
 .project-duration {
   display: flex;
   align-items: center;
-  font-size: 1rem;
+  font-size: 18px;
   opacity: 0.85;
   margin-bottom: 10px;
 }
 
 .project-desc {
-  font-size: 1.1rem;
+  font-size: 18px;
   line-height: 1.6;
   opacity: 0.95;
   margin-top: 25px;
@@ -160,6 +167,7 @@ nav.container {
   max-height: 400px;
   object-fit: contain;
   border-radius: 10px;
+  border: 3px solid #ccc;
 }
 
 .project-links a {
@@ -194,7 +202,7 @@ nav.container {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 35px;
+  margin-top: 20px;
   margin-bottom: 15px;
 }
 
@@ -203,7 +211,7 @@ nav.container {
   border: 1px solid rgba(255, 255, 255, 0.25);
   padding: 6px 12px;
   border-radius: 12px;
-  font-size: 0.85rem;
+  font-size: 16px;
   font-weight: 500;
   color: white;
   backdrop-filter: blur(4px);
@@ -248,7 +256,7 @@ nav.container {
 @media (max-width: 900px) {
   nav.container {
     position: relative;
-    background-color: rgba(15, 23, 42, 1);
+    background-color: rgba(11, 25, 40, 1);
   }
 
   .project-images img {

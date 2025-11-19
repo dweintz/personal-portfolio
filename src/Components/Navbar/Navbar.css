@@ -62,7 +62,7 @@ nav ul li a.active::after {
   nav {
     position: relative;
     margin-bottom: 20px;
-    background-color: rgba(15, 23, 42, 1);
+    background-color: rgba(11, 25, 40, 0.9);;
   }
 
   nav ul {
