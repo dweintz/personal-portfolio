@@ -18,7 +18,12 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  background-color: #E5E9F0;
+  background-color: #aeb4bd 100%;
+  background-image: linear-gradient(
+    to bottom,
+    #aeb4bd 100%,
+    #aeb4bd 100%
+  );
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -27,7 +32,7 @@ body {
 
 footer {
   margin-top: auto;
-  background-color: rgba(11, 25, 40, 1);
+  background-color: rgb(27, 47, 68);
 }
 
 nav.container {
@@ -36,7 +41,7 @@ nav.container {
   justify-content: center;
   align-items: center;
   padding: 15px 20px;
-  background-color: #0D1B2A;
+  background-color: rgb(27, 47, 68);
   backdrop-filter: blur(6px);
   position: fixed;
   top: 0;
@@ -98,7 +103,7 @@ nav.container {
 /* Project/work experience boxes */
 
 .project-box {
-  background-color: rgba(11, 25, 40, 0.75);
+  background-color: rgb(27, 47, 68);
   backdrop-filter: blur(6px);
   border-radius: 20px;
   box-shadow: 0 16px 50px rgba(0, 0, 0, 0.6);
@@ -256,7 +261,7 @@ nav.container {
 @media (max-width: 900px) {
   nav.container {
     position: relative;
-    background-color: rgba(11, 25, 40, 1);
+    background-color: rgb(27, 47, 68);
   }
 
   .project-images img {

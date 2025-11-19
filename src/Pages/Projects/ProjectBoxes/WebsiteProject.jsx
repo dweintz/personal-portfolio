@@ -21,7 +21,7 @@ const WebsiteProject = () => {
   ];
 
   return (
-    <div className={"project-box slide-box"}>
+    <div className={"project-box slide-box slide-right"}>
       <h2 className="project-title">Portfolio Website</h2>
       <h3 className="project-role">Personal Project</h3>
       <br></br>
@@ -64,7 +64,7 @@ const WebsiteProject = () => {
         <p>Project Resources:</p>
         <hr className="section-divider" />
       </div>
-      
+
       <div className="project-links">
         {attachments &&
           attachments.map((att, idx) => (

@@ -15,7 +15,7 @@ const NutritionProject = () => {
   const attachments = [{ name: "Dataset", url: "https://hd-epic.github.io/" }];
 
   return (
-    <div className={"project-box slide-box slide-right"}>
+    <div className={"project-box slide-box slide-left"}>
       <h2 className="project-title">Nutrition Change Estimation From Video</h2>
       <h3 className="project-role">
         Purdue Vertically Integrated Projects - Image Processing Team
