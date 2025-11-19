@@ -102,9 +102,9 @@ nav.container {
 /* Project/work experience boxes */
 
 .project-box {
-  background-color: rgb(27, 47, 68);
+  background-color: rgba(27, 47, 68, 0.75);
   backdrop-filter: blur(6px);
-  border-radius: 20px;
+  border-radius: 15px;
   box-shadow: 0 16px 50px rgba(0, 0, 0, 0.6);
   padding: 25px 30px;
   backdrop-filter: blur(6px);
@@ -270,5 +270,9 @@ nav.container {
   .content-page {
     padding: 30px 20px;
     padding-bottom: 50px;
+  }
+
+  .project-box {
+    background-color: rgba(27, 47, 68);
   }
 }
