@@ -107,4 +107,8 @@
   .contact-box {
     background: rgba(243, 243, 243, 0.88);
   }
+
+  .images {
+    border-radius: 10px;
+  }
 }
