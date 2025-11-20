@@ -3,6 +3,8 @@ import ProjectBox from "../../../Components/ProjectBox/ProjectBox";
 import project1Img1 from "../../../assets/nutrition/YOLO.png";
 import handObject from "../../../assets/nutrition/hand_object.png";
 import research_talk from "../../../assets/nutrition/talk.pdf";
+import demogif from "../../../assets/nutrition/demogif.GIF";
+
 
 const NutritionProject = () => {
   const skills = [
@@ -36,7 +38,7 @@ const NutritionProject = () => {
       alt: "YOLO Detection",
     },
     {
-      src: handObject,
+      src: demogif,
       caption: "System Results on test video:",
       alt: "Hand Object Detection",
     },

@@ -73,7 +73,7 @@ const RegistryProject = () => {
       skills={skills}
       attachments={attachments}
       images={images}
-      slideDirection="left"
+      slideDirection="right"
     />
   );
 };

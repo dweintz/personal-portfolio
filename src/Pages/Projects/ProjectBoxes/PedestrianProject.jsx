@@ -56,7 +56,7 @@ const PedestrianProject = () => {
       skills={skills}
       attachments={attachments}
       images={images}
-      slideDirection="left"
+      slideDirection="right"
     />
   );
 };
