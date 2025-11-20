@@ -17,7 +17,7 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  background-color: #aeb4bd 100%;
+  background-color: rgb(27, 47, 68);
   background-image: linear-gradient(
     to bottom,
     #c9cfda 100%,
