@@ -1,4 +1,5 @@
-import { FaMapMarkerAlt, FaCalendarAlt } from "react-icons/fa";
+import md from "dedent";
+import ProjectBox from "../../../Components/ProjectBox/ProjectBox";
 
 const WebsiteProject = () => {
   const skills = [
@@ -15,68 +16,37 @@ const WebsiteProject = () => {
 
   const attachments = [
     {
-      name: "Website Source Code (GitHub)",
+      name: "Source Code (GitHub)",
       url: "https://github.com/dweintz/personal-portfolio",
     },
   ];
 
+  const images = [];
+
+  const description = md`
+    Developed and deployed the portfolio website you’re viewing now, built
+    entirely from scratch using React, HTML, and CSS.
+
+    Focused on clean, minimalist design principles, usability, and
+    accessibility to ensure seamless viewing across desktop, tablet, and mobile
+    devices. Integrated modular React components for efficient maintainability
+    and scalability. Click the link below to view the source code for the site
+    on GitHub.
+  `;
+
   return (
-    <div className={"project-box slide-box slide-right"}>
-      <div className="project-header">
-        <h2 className="project-title">Portfolio Website</h2>
-      </div>
-      <h3 className="project-role">Personal Project</h3>
-      <br></br>
-      <p className="project-location">
-        <FaMapMarkerAlt className="icon-location" />
-        Purdue University
-      </p>
-      <p className="project-duration">
-        <FaCalendarAlt className="icon-calendar" />
-        Sep 2025 – Oct 2025
-      </p>
-      <br></br>
-      <div className="project-desc">
-        <p>
-          Developed and deployed the portfolio website you’re viewing now, built
-          entirely from scratch using React, HTML, and CSS.
-        </p>
-        <br></br>
-        <p>
-          Focused on clean, minimalist design principles, usability, and
-          accessibility to ensure seamless viewing across desktop, tablet, and
-          mobile devices. Integrated modular React components for efficient
-          maintainability and scalability. Click the link below to view the
-          source code for the site on GitHub.
-        </p>
-        <br />
-        <p>Key Skills:</p>
-        <hr className="section-divider" />
-      </div>
-
-      <div className="skills-container">
-        {skills.map((skill, l) => (
-          <span key={l} className="skill-pill">
-            {skill}
-          </span>
-        ))}
-      </div>
-      
-      <div className="project-desc">
-      <br />
-        <p>Project Resources:</p>
-        <hr className="section-divider" />
-      </div>
-
-      <div className="project-links">
-        {attachments &&
-          attachments.map((att, idx) => (
-            <a key={idx} href={att.url} target="_blank" rel="noreferrer">
-              {att.name}
-            </a>
-          ))}
-      </div>
-    </div>
+    <ProjectBox
+      title="Portfolio Website"
+      role="Personal Project"
+      logo=""
+      location="Purdue University"
+      duration="Sep 2025 – Present"
+      description={description}
+      skills={skills}
+      attachments={attachments}
+      images={images}
+      slideDirection="left"
+    />
   );
 };
 

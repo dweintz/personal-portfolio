@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mallanna&family=Outfit:wght@100..900&family=TASA+Orbiter:wght@400..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mallanna&family=Outfit:wght@100..900&family=TASA+Orbiter:wght@400..800&display=swap");
 
 * {
   margin: 0;
@@ -18,11 +18,7 @@ body {
   padding: 0;
   scroll-behavior: smooth;
   background-color: rgb(27, 47, 68);
-  background-image: linear-gradient(
-    to bottom,
-    #c9cfda 100%,
-    #aeb4bd 100%
-  );
+  background-image: linear-gradient(to bottom, #c9cfda 100%, #aeb4bd 100%);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -97,7 +93,6 @@ nav.container {
   width: 100%;
   max-width: 900px;
 }
-
 
 /* Project/work experience boxes */
 
@@ -191,7 +186,9 @@ nav.container {
   border-radius: 12px;
   border: 1px solid rgba(27, 47, 68, 0.15);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .project-images img:hover {
@@ -250,18 +247,22 @@ nav.container {
   justify-content: center;
   text-align: center;
   padding: 12px 20px;
-  background: linear-gradient(135deg, 
-    rgba(37, 99, 235, 0.08) 0%, 
-    rgba(37, 99, 235, 0.05) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(37, 99, 235, 0.08) 0%,
+    rgba(37, 99, 235, 0.05) 100%
+  );
   border-radius: 15px;
   border: 1px solid rgba(37, 99, 235, 0.2);
   box-shadow: 0 2px 8px rgba(37, 99, 235, 0.1);
 }
 
 .project-links a:hover {
-  background: linear-gradient(135deg, 
-    rgba(37, 99, 235, 0.25) 0%, 
-    rgba(37, 99, 235, 0.1) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(37, 99, 235, 0.25) 0%,
+    rgba(37, 99, 235, 0.1) 100%
+  );
   border-color: rgba(37, 99, 235, 0.4);
   transform: translateY(-4px);
   box-shadow: 0 4px 16px rgba(37, 99, 235, 0.2);
@@ -273,7 +274,6 @@ nav.container {
   color: #5a6c7d;
   font-size: 14px;
 }
-
 
 /* Skill pills */
 
@@ -297,18 +297,21 @@ nav.container {
   transition: all 0.3s ease;
 }
 
-
 /* Section divider styling */
 
 .section-divider {
   border: none;
   height: 2px;
-  background: linear-gradient(to right, rgba(27, 47, 68, 0.2), rgba(27, 47, 68, 0.05), rgba(27, 47, 68, 0.2));
+  background: linear-gradient(
+    to right,
+    rgba(27, 47, 68, 0.2),
+    rgba(27, 47, 68, 0.05),
+    rgba(27, 47, 68, 0.2)
+  );
   width: 100%;
   margin: 15px 0;
   border-radius: 4px;
 }
-
 
 /* Sliding box animations */
 
@@ -337,7 +340,6 @@ nav.container {
     transform: translateX(0);
   }
 }
-
 
 /* Image modal/lightbox */
 
@@ -414,7 +416,6 @@ nav.container {
   background: rgba(255, 255, 255, 0.2);
   transform: rotate(90deg);
 }
-
 
 /* Adjustments for mobile */
 
