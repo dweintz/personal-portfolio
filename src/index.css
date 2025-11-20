@@ -124,6 +124,7 @@ nav.container {
   height: 60px;
   width: auto;
   object-fit: contain;
+  padding-left: 50px;
 }
 
 .project-title {
