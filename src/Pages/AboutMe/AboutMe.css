@@ -1,5 +1,5 @@
 .about-box2 {
-  background-color: rgba(27, 47, 68, 0.75);
+  background: rgba(243, 243, 243, 0.88);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(6px);
   max-width: 900px;
@@ -8,6 +8,7 @@
   padding: 40px 30px;
   border-radius: 15px;
   margin-bottom: 50px;
+  color: #2d3748;
 }
 
 .about-box2 h2 {
@@ -29,11 +30,12 @@
   gap: 20px;
   max-width: 900px;
   width: 100%;
-  background-color: rgba(27, 47, 68, 0.75);
+  background: rgba(243, 243, 243, 0.88);
   backdrop-filter: blur(6px);
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  color: #2d3748;
 }
 
 .contact-box h1 {
@@ -55,7 +57,7 @@
 }
 
 .contact-item a {
-  color: white;
+  color: #2d3748;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -89,10 +91,10 @@
   }
 
   .about-box2 {
-    background-color: rgba(27, 47, 68);
+    background: rgba(243, 243, 243, 0.88);
   }
 
   .contact-box {
-    background-color: rgba(27, 47, 68);
+    background: rgba(243, 243, 243, 0.88);
   }
 }

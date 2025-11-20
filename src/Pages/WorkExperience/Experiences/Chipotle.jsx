@@ -20,6 +20,7 @@ const Chipotle = () => {
         <FaCalendarAlt className="icon-calendar" />
         May 2022 – Aug 2022
       </p>
+      <br></br>
       <div className="project-desc">
         <p>
           In the summer of 2022, I worked as a crew Member at Chipotle. I worked

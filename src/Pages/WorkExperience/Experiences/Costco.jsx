@@ -20,6 +20,7 @@ const Costco = () => {
         <FaCalendarAlt className="icon-calendar" />
         May 2023 – Jan 2025
       </p>
+      <br></br>
       <div className="project-desc">
         <p>
           Worked in a seasonal front-end support role, assisting cashiers,

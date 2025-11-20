@@ -3,10 +3,12 @@ import final_presentation from "../../../assets/pedestrian/Pedestrian_Detection_
 import final_report from "../../../assets/pedestrian/Pedestrian_Detection_Accident_Avoidance_F24_Final_Report-compressed.pdf";
 import poster from "../../../assets/pedestrian/Research_Poster.pdf";
 import pedestrian1 from "../../../assets/pedestrian/pedestrian1.png";
-import pedestrian2 from "../../../assets/pedestrian/pedestrian2.png";
 import { FaMapMarkerAlt, FaCalendarAlt } from "react-icons/fa";
+import { useState } from "react";
 
 const PedestrianProject = () => {
+  const [modalImage, setModalImage] = useState(null);
+
   const skills = [
     "Python",
     "Image Processing",
@@ -21,11 +23,22 @@ const PedestrianProject = () => {
     { name: "Research Conference Certificate", url: certificate },
   ];
 
+  const openModal = (imageSrc) => {
+    setModalImage(imageSrc);
+  };
+
+  const closeModal = () => {
+    setModalImage(null);
+  };
+
   return (
+    <>
     <div className={"project-box slide-box"}>
-      <h2 className="project-title">
-        Pedestrian Detection for Crash Avoidance
-      </h2>
+      <div className="project-header">
+        <h2 className="project-title">
+          Pedestrian Detection for Crash Avoidance
+        </h2>
+      </div>
       <h3 className="project-role">
         Purdue Vertically Integrated Projects - Image Processing Team
       </h3>
@@ -38,6 +51,7 @@ const PedestrianProject = () => {
         <FaCalendarAlt className="icon-calendar" />
         Aug 2024 – Dec 2024
       </p>
+      <br></br>
       <div className="project-desc">
         <p>
           As part of the Image Processing and Analysis with Applications (IPAA)
@@ -88,12 +102,18 @@ const PedestrianProject = () => {
       </div>
 
       <div className="project-images">
-        <p className="project-desc">
-          Results of pedestrian detection and crash avoidance algorithm:
-        </p>
-        <img src={pedestrian1}></img>
+          <p className="project-desc">Results of pedestrian detection and crash avoidance algorithm:</p>
+          <img src={pedestrian1} onClick={() => openModal(pedestrian1)} alt="Pedestrian Detection" />
+        </div>
       </div>
-    </div>
+
+      {modalImage && (
+        <div className="image-modal" onClick={closeModal}>
+          <span className="image-modal-close" onClick={closeModal}>×</span>
+          <img src={modalImage} onClick={(e) => e.stopPropagation()} alt="Enlarged view" />
+        </div>
+      )}
+    </>
   );
 };
 

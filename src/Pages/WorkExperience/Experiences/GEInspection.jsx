@@ -30,6 +30,7 @@ const GEInspection = () => {
         <FaCalendarAlt className="icon-calendar" />
         May 2024 – Aug 2024
       </p>
+      <br></br>
       <div className="project-desc">
         <p>
           In the summer of 2024, I worked as an Inspection Engineering Intern at
@@ -60,7 +61,7 @@ const GEInspection = () => {
         </p>
         <br></br>
 
-        <div className="project-links">
+        <div className="work-links">
           Learn more about{" "}
           <a
             href="https://www.geaerospace.com/news/articles/ge-aerospace-inspection-solutions-team-making-waves-enhanced-safety-and-quality"

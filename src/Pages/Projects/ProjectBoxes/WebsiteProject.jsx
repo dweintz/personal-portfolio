@@ -22,7 +22,9 @@ const WebsiteProject = () => {
 
   return (
     <div className={"project-box slide-box slide-right"}>
-      <h2 className="project-title">Portfolio Website</h2>
+      <div className="project-header">
+        <h2 className="project-title">Portfolio Website</h2>
+      </div>
       <h3 className="project-role">Personal Project</h3>
       <br></br>
       <p className="project-location">
@@ -33,6 +35,7 @@ const WebsiteProject = () => {
         <FaCalendarAlt className="icon-calendar" />
         Sep 2025 – Oct 2025
       </p>
+      <br></br>
       <div className="project-desc">
         <p>
           Developed and deployed the portfolio website you’re viewing now, built

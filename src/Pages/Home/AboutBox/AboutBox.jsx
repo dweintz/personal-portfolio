@@ -21,7 +21,7 @@ const AboutBox = () => {
           front-end development and UI/UX design. It’s still a work in progress,
           and I plan on adding more content and features soon. In the meantime,
           feel free to browse through the site to learn more about my
-          experience, projects, and interests outside of work.
+          experience, projects, and interests.
         </p>
       </div>
     </div>

@@ -31,6 +31,7 @@ const GEManufacturing = () => {
         <FaCalendarAlt className="icon-calendar" />
         May 2025 – Aug 2025
       </p>
+      <br></br>
       <div className="project-desc">
         <p>
           In the summer of 2025, I worked as a Supply Chain and Manufacturing
@@ -68,7 +69,7 @@ const GEManufacturing = () => {
           </ul>
         </p>
         <br></br>
-        <div className="project-links">
+        <div className="work-links">
           Learn more about{" "}
           <a
             href="https://www.geaerospace.com/military-defense/marine"
