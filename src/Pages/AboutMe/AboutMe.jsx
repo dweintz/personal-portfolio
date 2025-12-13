@@ -16,7 +16,7 @@ const AboutMe = () => {
   return (
     <>
       <div className="content-page">
-        <div className={`about-box2 slide-box`}>
+        <div className={`about-box2`}>
           <div className="images">
             <img
               className="images"
@@ -25,7 +25,7 @@ const AboutMe = () => {
             />
           </div>
         </div>
-        <div className={`about-box2 slide-box slide-right`}>
+        <div className={`about-box2`}>
           <h2>About Me</h2>
           <p>
             Hi, I’m Donny, a Computer Engineering student at Purdue University
@@ -53,7 +53,7 @@ const AboutMe = () => {
           </p>
         </div>
 
-        <div className="contact-box slide-box">
+        <div className="contact-box">
           <h1>Contact Information</h1>
           <div className="contact-items">
             <div className="contact-item">

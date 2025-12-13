@@ -97,7 +97,7 @@ const ProjectBox = ({
 
   return (
     <>
-      <div className={`project-box slide-box slide-${slideDirection}`}>
+      <div className={`project-box`}>
         <div className="project-header">
           <h2 className="project-title">{title}</h2>
           {logo && <img src={logo} alt="Logo" className="project-logo" />}

@@ -3,7 +3,7 @@ import mePic from "../../../assets/me_no_background.png";
 
 const AboutBox = () => {
   return (
-    <div className={`about-box slide-box`}>
+    <div className={`about-box`}>
       <div className="about-left">
         <img src={mePic} alt="Me" />
       </div>

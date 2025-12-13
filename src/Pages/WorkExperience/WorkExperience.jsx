@@ -18,7 +18,7 @@ const WorkExperience = () => {
     <div className="content-page">
       <div className="content-container">
         <div className="projects-page">
-          <aside className="projects-toc slide-box">
+          <aside className="projects-toc">
             <h3>Contents</h3>
             <ul>
               <li>
