@@ -36,11 +36,11 @@ const AboutMe = () => {
           </p>
           <br></br>
           <p>
-            Outside the classroom, I enjoy spending time outdoors.
-            Many of the photos above capture some of my favorite trips to
-            destinations across the Midwest and beyond. Spending time in
-            nature helps balance my passion for technology, as it’s my way of
-            disconnecting, recharging, and finding new inspiration.
+            Outside the classroom, I enjoy spending time outdoors. Many of the
+            photos above capture some of my favorite trips to destinations
+            across the Midwest and beyond. Spending time in nature helps
+            balance my passion for technology, as it’s my way of disconnecting,
+            recharging, and finding new inspiration.
           </p>
           <br></br>
           <p>

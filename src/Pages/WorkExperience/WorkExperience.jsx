@@ -21,10 +21,22 @@ const WorkExperience = () => {
           <aside className="projects-toc slide-box">
             <h3>Contents</h3>
             <ul>
-              <li><button onClick={() => scrollTo("ge_manufacturing")}>GE Manufacturing</button></li>
-              <li><button onClick={() => scrollTo("ge_inspection")}>GE Inspection</button></li>
-              <li><button onClick={() => scrollTo("costco")}>Costco</button></li>
-              <li><button onClick={() => scrollTo("chipotle")}>Chipotle</button></li>
+              <li>
+                <button onClick={() => scrollTo("ge_manufacturing")}>
+                  GE Manufacturing
+                </button>
+              </li>
+              <li>
+                <button onClick={() => scrollTo("ge_inspection")}>
+                  GE Inspection
+                </button>
+              </li>
+              <li>
+                <button onClick={() => scrollTo("costco")}>Costco</button>
+              </li>
+              <li>
+                <button onClick={() => scrollTo("chipotle")}>Chipotle</button>
+              </li>
             </ul>
           </aside>
 
@@ -51,4 +63,4 @@ const WorkExperience = () => {
   );
 };
 
-export default WorkExperience
+export default WorkExperience;

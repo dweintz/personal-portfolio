@@ -18,7 +18,7 @@ const PedestrianProject = () => {
     { name: "Project Poster", url: poster },
     { name: "Project Paper", url: final_report },
     { name: "Project Final Presentation", url: final_presentation },
-    { name: "Research Conference Certificate", url: certificate },
+    { name: "Conference Certificate", url: certificate },
   ];
 
   const images = [

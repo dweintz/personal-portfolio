@@ -3,6 +3,7 @@ import WebsiteProject from "./ProjectBoxes/WebsiteProject";
 import NutritionProject from "./ProjectBoxes/NutritionProject";
 import PedestrianProject from "./ProjectBoxes/PedestrianProject";
 import RegistryProject from "./ProjectBoxes/RegistryProject";
+import FruitNinjaProject from "./ProjectBoxes/FruitNinjaProject";
 
 const scrollTo = (id) => {
   const el = document.getElementById(id);
@@ -22,10 +23,31 @@ const Projects = () => {
           <aside className="projects-toc slide-box">
             <h3>Contents</h3>
             <ul>
-              <li><button onClick={() => scrollTo("nutrition")}>Nutrition Estimation</button></li>
-              <li><button onClick={() => scrollTo("registry")}>Model Registry</button></li>
-              <li><button onClick={() => scrollTo("website")}>Personal Website</button></li>
-              <li><button onClick={() => scrollTo("pedestrian")}>Pedestrian Detection</button></li>
+              <li>
+                <button onClick={() => scrollTo("nutrition")}>
+                  Nutrition Estimation
+                </button>
+              </li>
+              <li>
+                <button onClick={() => scrollTo("registry")}>
+                  Model Registry
+                </button>
+              </li>
+              <li>
+                <button onClick={() => scrollTo("fruit_ninja")}>
+                  3D Fruit Ninja
+                </button>
+              </li>
+              <li>
+                <button onClick={() => scrollTo("website")}>
+                  Portfolio Website
+                </button>
+              </li>
+              <li>
+                <button onClick={() => scrollTo("pedestrian")}>
+                  Pedestrian Detection
+                </button>
+              </li>
             </ul>
           </aside>
 
@@ -36,6 +58,10 @@ const Projects = () => {
 
             <section id="registry">
               <RegistryProject />
+            </section>
+
+            <section id="fruit_ninja">
+              <FruitNinjaProject />
             </section>
 
             <section id="website">
@@ -52,4 +78,4 @@ const Projects = () => {
   );
 };
 
-export default Projects
+export default Projects;

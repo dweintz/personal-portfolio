@@ -4,7 +4,7 @@ import project1Img1 from "../../../assets/nutrition/YOLO.png";
 import handObject from "../../../assets/nutrition/hand_object.png";
 import research_talk from "../../../assets/nutrition/talk.pdf";
 import demogif from "../../../assets/nutrition/demogif.GIF";
-
+import paper from "../../../assets/nutrition/paper.pdf";
 
 const NutritionProject = () => {
   const skills = [
@@ -27,6 +27,7 @@ const NutritionProject = () => {
 
   const attachments = [
     { name: "Research Talk", url: research_talk },
+    { name: "Semester 1 Paper", url: paper },
     { name: "Cookware/Testing Dataset", url: "https://hd-epic.github.io/" },
     { name: "Ingredient Dataset", url: "https://lorenz.ecn.purdue.edu/~vfn/" },
   ];
