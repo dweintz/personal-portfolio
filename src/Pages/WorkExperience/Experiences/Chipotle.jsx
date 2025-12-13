@@ -25,7 +25,7 @@ const Chipotle = () => {
       skills={skills}
       attachments={attachments}
       images={images}
-      slideDirection="right"
+      slideDirection="left"
     />
   );
 };

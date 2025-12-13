@@ -86,7 +86,7 @@ const NutritionProject = () => {
       skills={skills}
       attachments={attachments}
       images={images}
-      slideDirection="left"
+      slideDirection="right"
     />
   );
 };
