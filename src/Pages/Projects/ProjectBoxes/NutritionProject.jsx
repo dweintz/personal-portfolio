@@ -47,12 +47,13 @@ const NutritionProject = () => {
 
   const description = md`
     As part of my senior design project on the Image Processing and Analysis
-    with Applications (IPAA) team, we are working to design a system to
-    estimate nutritional changes during the cooking process through video data.
-    The system combines several components:
+    with Applications (IPAA) team, we designed a system to estimate nutritional
+    changes during the cooking process through video data. The system combines
+    several components:
 
-    - Hand detection using MediaPipe hands and cookware detection using YOLO
-      (You only look once) to identify candidate regions for food ingredients.
+    - Hand detection using MediaPipe hands and preparation tool detection using
+      YOLO (You only look once) to identify candidate regions for food
+      ingredients.
     - Ingredient detection using a YOLO model trained on ingredient images of
       various categories.
     - Filtering ingredient detections using thresholding techniques based on
@@ -67,13 +68,13 @@ const NutritionProject = () => {
     estimation. Currently, we are working on ways to better estimate the
     quantity of food present in each detection.
 
-    Once the core system is complete, we plan to extend the project to identify
+    During the second semester, we plan to extend the project to identify
     cooking methods and develop a front-end interface for real-time nutrition
     tracking and visualization.
 
-    Recently, we presented our project at the Fall 2025 Purdue Undergraduate
-    Research Expo via a research talk. Check out our PowerPoint slides from the
-    talk in the resources below.
+    We presented our project at the Fall 2025 Purdue Undergraduate Research
+    Expo via a research talk. Check out our PowerPoint slides from the talk in
+    the resources below.
   `;
 
   return (
@@ -82,7 +83,7 @@ const NutritionProject = () => {
       role="Purdue Vertically Integrated Projects - Image Processing Team"
       logo=""
       location="Purdue University"
-      duration="Aug 2025 – Present"
+      duration="Aug 2025 – Dec 2025"
       description={description}
       skills={skills}
       attachments={attachments}

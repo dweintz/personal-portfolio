@@ -37,13 +37,13 @@ const FruitNinjaProject = () => {
   ];
 
   const description = md`
-    We developed an interactive Fruit Ninja game that uses real-time computer
-    vision and machine learning to enable gesture-based gameplay through a live
-    camera feed. The system tracks user hand movements, recognizes gestures,
-    and maps them to in-game controls, allowing players to interact with
-    virtual objects using natural hand motions. The project emphasizes
-    low-latency performance, accurate gesture recognition, and responsive
-    visual feedback.
+    As part of a team, I developed an interactive Fruit Ninja game that uses
+    real-time computer vision and machine learning to enable gesture-based
+    gameplay through a live camera feed. The system tracks user hand movements,
+    recognizes gestures, and maps them to game controls, allowing players to
+    interact with virtual objects using natural hand motions. The project
+    emphasizes low latency performance, accurate gesture recognition, and
+    responsive visual feedback.
 
     Key components and contributions:
 

@@ -79,7 +79,7 @@ nav.container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 110px;
+  padding-top: 120px;
   padding-bottom: 50px;
   color: white;
   text-align: left;
@@ -90,7 +90,7 @@ nav.container {
   flex-direction: column;
   gap: 50px;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1250px;
 }
 
 /* Project/work experience boxes */
@@ -187,7 +187,7 @@ nav.container {
 }
 
 .project-images img:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
 
@@ -419,15 +419,15 @@ nav.container {
 .projects-page {
   display: grid;
   grid-template-columns: 260px 1fr;
-  gap: 2rem;
-  padding: 2rem;
+  gap: 30px;
+  padding: 0px 20px;
 }
 
 /* Contents tab */
 
 .projects-toc {
   position: sticky;
-  top: 140px;
+  top: 120px;
   height: fit-content;
   background: rgba(243, 243, 243, 0.88);
   border-radius: 12px;
