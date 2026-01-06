@@ -2,20 +2,24 @@
   display: flex;
   width: 900px;
   max-width: 90%;
-  background: rgba(243, 243, 243, 0.88);
-  border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(6px);
   overflow: hidden;
   margin-top: 120px;
   position: relative;
   color: #2d3748;
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  margin-bottom: 0px;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.04);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .about-left {
   flex: 1;
   position: relative;
-  min-height: 475px;
+  min-height: 500px;
 }
 
 .about-left img {
@@ -41,7 +45,7 @@
 }
 
 .about-right p {
-  line-height: 1.5;
+  line-height: 1.7;
   font-size: 18px;
 }
 
@@ -50,12 +54,9 @@
     flex-direction: column;
     width: 90%;
     margin-top: 30px;
-    background: none;
   }
 
   .about-left {
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
     min-height: 0px;
   }
 
@@ -65,9 +66,5 @@
     max-width: 250px;
     height: auto;
     padding-top: 20px;
-  }
-
-  .about-right {
-    background: rgba(243, 243, 243, 0.88);
   }
 }
