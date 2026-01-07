@@ -1,9 +1,20 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  FaArrowLeft,
+  FaMapMarkerAlt,
+  FaCalendarAlt,
+  FaFileAlt,
+  FaExternalLinkAlt,
+} from "react-icons/fa";
+import { parseMarkdown } from "../../../utils/markdownParser";
 import md from "dedent";
-import ProjectBox from "../../../Components/ProjectBox/ProjectBox";
+import "../Projects.css";
+
+// Assets
 import project1Img1 from "../../../assets/nutrition/YOLO.png";
-import handObject from "../../../assets/nutrition/hand_object.png";
-import research_talk from "../../../assets/nutrition/talk.pdf";
 import demogif from "../../../assets/nutrition/demogif.GIF";
+import research_talk from "../../../assets/nutrition/talk.pdf";
 import paper from "../../../assets/nutrition/paper.pdf";
 
 const NutritionProject = () => {
@@ -33,14 +44,10 @@ const NutritionProject = () => {
   ];
 
   const images = [
-    {
-      src: project1Img1,
-      caption: "System Diagram:",
-      alt: "YOLO Detection",
-    },
+    { src: project1Img1, caption: "System Diagram", alt: "YOLO Detection" },
     {
       src: demogif,
-      caption: "System Results on test video:",
+      caption: "System Results on test video",
       alt: "Hand Object Detection",
     },
   ];
@@ -52,8 +59,7 @@ const NutritionProject = () => {
     several components:
 
     - Hand detection using MediaPipe hands and preparation tool detection using
-      YOLO (You only look once) to identify candidate regions for food
-      ingredients.
+      YOLO to identify candidate regions for food ingredients.
     - Ingredient detection using a YOLO model trained on ingredient images of
       various categories.
     - Filtering ingredient detections using thresholding techniques based on
@@ -67,29 +73,84 @@ const NutritionProject = () => {
     working to improve performance in ingredient detection and calorie
     estimation. Currently, we are working on ways to better estimate the
     quantity of food present in each detection.
-
-    During the second semester, we plan to extend the project to identify
-    cooking methods and develop a front-end interface for real-time nutrition
-    tracking and visualization.
-
-    We presented our project at the Fall 2025 Purdue Undergraduate Research
-    Expo via a research talk. Check out our PowerPoint slides from the talk in
-    the resources below.
   `;
 
+  const metadata = {
+    title: "Nutrition Change Estimation From Video",
+    role: "Purdue Vertically Integrated Projects — Image Processing Team",
+    location: "Purdue University",
+    duration: "Aug 2025 – Dec 2025",
+  };
+
   return (
-    <ProjectBox
-      title="Nutrition Change Estimation From Video"
-      role="Purdue Vertically Integrated Projects - Image Processing Team"
-      logo=""
-      location="Purdue University"
-      duration="Aug 2025 – Dec 2025"
-      description={description}
-      skills={skills}
-      attachments={attachments}
-      images={images}
-      slideDirection="right"
-    />
+    <div className="case-study-wrapper">
+      <div className="back-nav">
+        <Link to="/projects" className="back-link">
+          <FaArrowLeft /> Back to Projects
+        </Link>
+      </div>
+
+      <div className="case-study-grid">
+        <main className="case-study-main">
+          <header className="case-study-header">
+            <h1 className="case-study-title">{metadata.title}</h1>
+            <p className="case-study-role">{metadata.role}</p>
+          </header>
+
+          <div className="case-study-body">{parseMarkdown(description)}</div>
+
+          <div className="project-images-gallery">
+            {images.map((img, i) => (
+              <figure key={i} className="gallery-item">
+                <img src={img.src} alt={img.alt} />
+                <figcaption>{img.caption}</figcaption>
+              </figure>
+            ))}
+          </div>
+        </main>
+
+        <aside className="case-study-sidebar">
+          <section className="sidebar-section">
+            <h4>Location & Date</h4>
+            <div className="meta-row">
+              <FaMapMarkerAlt /> <span>{metadata.location}</span>
+            </div>
+            <div className="meta-row">
+              <FaCalendarAlt /> <span>{metadata.duration}</span>
+            </div>
+          </section>
+
+          <section className="sidebar-section">
+            <h4>Resources</h4>
+            <div className="detail-links-list">
+              {attachments.map((att, i) => (
+                <a
+                  key={i}
+                  href={att.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="detail-resource-link"
+                >
+                  <FaFileAlt /> {att.name}{" "}
+                  <FaExternalLinkAlt className="ext-icon" />
+                </a>
+              ))}
+            </div>
+          </section>
+
+          <section className="sidebar-section">
+            <h4>Technical Skills</h4>
+            <div className="detail-skills-list">
+              {skills.map((skill) => (
+                <span key={skill} className="detail-skill-tag">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </section>
+        </aside>
+      </div>
+    </div>
   );
 };
 

@@ -1,5 +1,9 @@
 import { useState } from "react";
-import { FaMapMarkerAlt, FaCalendarAlt, FaExternalLinkAlt } from "react-icons/fa";
+import {
+  FaMapMarkerAlt,
+  FaCalendarAlt,
+  FaExternalLinkAlt,
+} from "react-icons/fa";
 
 // Simple markdown parser
 const parseMarkdown = (markdown) => {
@@ -164,25 +168,27 @@ const ProjectBox = ({
         </div>
 
         {attachments && attachments.length > 0 && (
-        <>
-          <div className="project-desc">
-            <br />
-            <p>Project Resources:</p>
-            <hr className="section-divider" />
-          </div>
+          <>
+            <div className="project-desc">
+              <br />
+              <p>Project Resources:</p>
+              <hr className="section-divider" />
+            </div>
 
-          <div className="project-links">
-            {attachments.map((att, idx) => (
-              <a key={idx} href={att.url} target="_blank" rel="noreferrer">
-                {/* Add the icon here */}
-                <span>{att.name}</span>
-                <FaExternalLinkAlt style={{ marginLeft: "8px", fontSize: "0.85em" }} />
-              </a>
-            ))}
-          </div>
-        </>
-      )}
-      <br />
+            <div className="project-links">
+              {attachments.map((att, idx) => (
+                <a key={idx} href={att.url} target="_blank" rel="noreferrer">
+                  {/* Add the icon here */}
+                  <span>{att.name}</span>
+                  <FaExternalLinkAlt
+                    style={{ marginLeft: "8px", fontSize: "0.85em" }}
+                  />
+                </a>
+              ))}
+            </div>
+          </>
+        )}
+        <br />
         {images && images.length > 0 && (
           <div className="project-images">
             {images.map((image, idx) => (

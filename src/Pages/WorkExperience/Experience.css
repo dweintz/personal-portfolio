@@ -1,0 +1,145 @@
+.experience-page-wrapper {
+  background-color: #ffffff;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.experience-container {
+  width: 90%;
+  max-width: 1250px;
+}
+
+.experience-entry-grid {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  gap: 80px;
+  margin-bottom: 100px;
+  align-items: start;
+}
+
+.experience-sidebar-info {
+  padding-left: 40px;
+  border-left: 2px solid #e0e4e9;
+}
+
+.experience-company-logo {
+  max-width: 60px;
+  height: auto;
+  transition: 0.3s ease;
+}
+
+.sidebar-group h4 {
+  font-size: 14px;
+  padding-top: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #8d99a8;
+  margin-bottom: 15px;
+}
+
+.meta-item,
+.date-location {
+  font-size: 16px;
+  padding-top: 15px;
+}
+
+.experience-role-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #1a2332;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  .experience-page-wrapper {
+    background-color: #ffffff;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .experience-entry-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 0px;
+    margin-bottom: 75px;
+    padding: 0;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+  }
+
+  .experience-entry-grid:not(:last-child)::after {
+    content: "";
+    display: block;
+    order: 4;
+    width: 95%;
+    height: 2px;
+    background-color: #e0e4e9;
+    margin: 60px auto 0;
+  }
+
+  .experience-sidebar-info,
+  .experience-sidebar-info {
+    order: 1;
+    width: 100%;
+    border: none !important;
+    padding: 0 !important;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .experience-main-content,
+  .experience-main-content {
+    order: 2;
+    width: 100%;
+  }
+
+  .experience-logo-container {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+
+  .experience-company-logo {
+    max-width: 60px;
+  }
+
+  .company-label {
+    display: none;
+  }
+
+  .meta-item {
+    font-size: 20px;
+    margin-bottom: 2px;
+    color: #64748b;
+  }
+
+  .meta-item strong {
+    font-size: 24px;
+    display: block;
+  }
+
+  .meta {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+
+  .experience-role-title {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: rgb(27, 47, 68);
+    line-height: 1.3;
+  }
+}

@@ -69,8 +69,10 @@ nav ul li a.active::after {
 
   nav ul {
     flex-direction: column;
-    gap: 10px;
+
+    gap: 18px;
     align-items: center;
+    padding-bottom: 15px;
   }
 
   nav ul li {
