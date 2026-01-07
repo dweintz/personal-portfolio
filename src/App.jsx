@@ -10,6 +10,7 @@ import RegistryProject from "./Pages/Projects/ProjectBoxes/RegistryProject";
 import FruitNinjaProject from "./Pages/Projects/ProjectBoxes/FruitNinjaProject";
 import WebsiteProject from "./Pages/Projects/ProjectBoxes/WebsiteProject";
 import PedestrianProject from "./Pages/Projects/ProjectBoxes/PedestrianProject";
+import Contact from "./Pages/Contact/Contact";
 
 import ProjectsGrid from "./Pages/Projects/ProjectGrid";
 import Experience from "./Pages/WorkExperience/Experience";
@@ -25,7 +26,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/work" element={<Experience />} />
           <Route path="/projects" element={<ProjectsGrid />} />
-          <Route path="/about" element={<AboutMe />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/projects/nutrition" element={<NutritionProject />} />
           <Route path="/projects/registry" element={<RegistryProject />} />
           <Route path="/projects/fruitninja" element={<FruitNinjaProject />} />

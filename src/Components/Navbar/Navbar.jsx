@@ -30,14 +30,14 @@ const Navbar = () => {
             Projects
           </NavLink>
         </li>
-        {/* <li>
+        <li>
           <NavLink
-            to="/about"
+            to="/contact"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
-            About Me
+            Contact
           </NavLink>
-        </li> */}
+        </li>
       </ul>
     </nav>
   );
