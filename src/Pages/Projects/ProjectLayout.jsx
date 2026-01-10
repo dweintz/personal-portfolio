@@ -71,7 +71,7 @@ const ProjectLayout = ({ project }) => {
                     rel="noreferrer"
                     className="global-link"
                   >
-                    <FaFileAlt className="left-icon"/> {att.name}{" "}
+                    <FaFileAlt className="left-icon" /> {att.name}{" "}
                     <FaExternalLinkAlt className="right-icon" />
                   </a>
                 </div>

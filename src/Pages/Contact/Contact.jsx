@@ -5,13 +5,12 @@ import {
   FaMapMarkerAlt,
   FaPhone,
   FaFileAlt,
-  FaExternalLinkAlt
-
+  FaExternalLinkAlt,
 } from "react-icons/fa";
 import "./Contact.css";
 
-import ContactResourcesResume from "../../assets/ContactResources/ContactResourcesResume.pdf"
-import ContactResourcesTranscript from "../../assets/ContactResources/ContactResourcesTranscript.pdf"
+import ContactResourcesResume from "../../assets/ContactResources/ContactResourcesResume.pdf";
+import ContactResourcesTranscript from "../../assets/ContactResources/ContactResourcesTranscript.pdf";
 
 const Contact = () => {
   return (
@@ -37,11 +36,8 @@ const Contact = () => {
             <div className="contact-group">
               <h3 className="group-label">Contact Info</h3>
               <div className="detail-links-list">
-                <a
-                  href="mailto:donnyweintz@gmail.com"
-                  className="global-link"
-                >
-                  <FaEnvelope className="left-icon"/> donnyweintz@gmail.com
+                <a href="mailto:donnyweintz@gmail.com" className="global-link">
+                  <FaEnvelope className="left-icon" /> donnyweintz@gmail.com
                 </a>
               </div>
               <div className="contact-item">
@@ -67,7 +63,7 @@ const Contact = () => {
                   rel="noreferrer"
                   className="global-link"
                 >
-                  <FaLinkedin className="left-icon"/> LinkedIn{" "}
+                  <FaLinkedin className="left-icon" /> LinkedIn{" "}
                   <FaExternalLinkAlt className="right-icon" />
                 </a>
               </div>
@@ -78,7 +74,7 @@ const Contact = () => {
                   rel="noreferrer"
                   className="global-link"
                 >
-                  <FaGithub className="left-icon"/> GitHub{" "}
+                  <FaGithub className="left-icon" /> GitHub{" "}
                   <FaExternalLinkAlt className="right-icon" />
                 </a>
               </div>
@@ -93,7 +89,7 @@ const Contact = () => {
                   rel="noreferrer"
                   className="global-link"
                 >
-                  <FaFileAlt className="left-icon"/> Resume{" "}
+                  <FaFileAlt className="left-icon" /> Resume{" "}
                   <FaExternalLinkAlt className="right-icon" />
                 </a>
               </div>
@@ -104,7 +100,7 @@ const Contact = () => {
                   rel="noreferrer"
                   className="global-link"
                 >
-                  <FaFileAlt className="left-icon"/> Purdue Transcript{" "}
+                  <FaFileAlt className="left-icon" /> Purdue Transcript{" "}
                   <FaExternalLinkAlt className="right-icon" />
                 </a>
               </div>

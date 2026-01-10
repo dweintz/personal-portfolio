@@ -1,6 +1,5 @@
 .case-study-wrapper {
   background-color: #ffffff;
-  min-height: 100vh;
   width: 100%;
   color: #1a2332;
   padding-top: 120px;
@@ -42,7 +41,7 @@
 .case-study-title {
   font-size: 30px;
   font-weight: 800;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   line-height: 1.1;
 }
 
@@ -141,7 +140,7 @@
 @media (max-width: 900px) {
   .case-study-wrapper {
     width: 90%;
-    padding-top: 20px;
+    padding-top: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -151,7 +150,8 @@
 
   .case-study-grid {
     grid-template-columns: 1fr;
-    gap: 50px;
+    gap: 0px;
+    padding-bottom: 0px;
   }
 
   .case-study-sidebar {

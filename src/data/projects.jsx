@@ -1,28 +1,30 @@
 import md from "dedent";
 
 // Nutrition Estimation project resources
-import NutritionEstimationDemo from "../assets/NutritionEstimation/NutritionEstimationDemo.gif"
-import NutritionEstimationDiagram from "../assets/NutritionEstimation/NutritionEstimationDiagram.png"
-import NutritionEstimationPaper from "../assets/NutritionEstimation/NutritionEstimationPaper.pdf"
-import NutritionEstimationTalk from "../assets/NutritionEstimation/NutritionEstimationTalk.pdf"
+import NutritionEstimationDemo from "../assets/NutritionEstimation/NutritionEstimationDemo.gif";
+import NutritionEstimationDiagram from "../assets/NutritionEstimation/NutritionEstimationDiagram.png";
+import NutritionEstimationPaper from "../assets/NutritionEstimation/NutritionEstimationPaper.pdf";
+import NutritionEstimationTalk from "../assets/NutritionEstimation/NutritionEstimationTalk.pdf";
+import NutritionEstimationThumbnail from "../assets/NutritionEstimation/NutritionEstimationThumbnail.png";
 
 // Model Registry project resources
-import ModelRegistryDashboard from "../assets/ModelRegistry/ModelRegistryDashboard.png"
-import ModelRegistryArtifactDetails from "../assets/ModelRegistry/ModelRegistryArtifactDetails.png"
+import ModelRegistryDashboard from "../assets/ModelRegistry/ModelRegistryDashboard.png";
+import ModelRegistryArtifactDetails from "../assets/ModelRegistry/ModelRegistryArtifactDetails.png";
 
 // 3D Fruit Ninja project resources
-import FruitNinjaGameplay from "../assets/FruitNinja/FruitNinjaGameplay.gif"
-import FruitNinjaPresentation from "../assets/FruitNinja/FruitNinjaPresentation.pdf"
+import FruitNinjaGameplay from "../assets/FruitNinja/FruitNinjaGameplay.gif";
+import FruitNinjaPresentation from "../assets/FruitNinja/FruitNinjaPresentation.pdf";
+import FruitNinjaThumbnail from "../assets/FruitNinja/FruitNinjaThumbnail.png";
 
 // Website project resources
-import PersonalPortfolioHomepage from "../assets/PersonalPortfolio/PersonalPortfolioHomepage.png"
+import PersonalPortfolioHomepage from "../assets/PersonalPortfolio/PersonalPortfolioHomepage.png";
 
 // Pedestrian Detection project resources
-import PedestrianDetectionCertificate from "../assets/PedestrianDetection/PedestrianDetectionCertificate.pdf"
-import PedestrianDetectionImage from "../assets/PedestrianDetection/PedestrianDetectionImage.png"
-import PedestrianDetectionPaper from "../assets/PedestrianDetection/PedestrianDetectionPaper.pdf"
-import PedestrianDetectionPoster from "../assets/PedestrianDetection/PedestrianDetectionPoster.pdf"
-import PedestrianDetectionPresentation from "../assets/PedestrianDetection/PedestrianDetectionPresentation.pdf"
+import PedestrianDetectionCertificate from "../assets/PedestrianDetection/PedestrianDetectionCertificate.pdf";
+import PedestrianDetectionImage from "../assets/PedestrianDetection/PedestrianDetectionImage.png";
+import PedestrianDetectionPaper from "../assets/PedestrianDetection/PedestrianDetectionPaper.pdf";
+import PedestrianDetectionPoster from "../assets/PedestrianDetection/PedestrianDetectionPoster.pdf";
+import PedestrianDetectionPresentation from "../assets/PedestrianDetection/PedestrianDetectionPresentation.pdf";
 
 export const projectData = {
   nutrition: {
@@ -56,11 +58,15 @@ export const projectData = {
         url: "https://lorenz.ecn.purdue.edu/~vfn/",
       },
     ],
-    thumbnail: NutritionEstimationDemo,
+    thumbnail: NutritionEstimationThumbnail,
     shortDesc:
       "A computer vision system for estimating recipe nutrition from egocentric cooking videos",
     images: [
-      { src: NutritionEstimationDiagram, caption: "System Diagram", alt: "YOLO Detection" },
+      {
+        src: NutritionEstimationDiagram,
+        caption: "System Diagram",
+        alt: "YOLO Detection",
+      },
       {
         src: NutritionEstimationDemo,
         caption: "System Results on test video",
@@ -75,7 +81,6 @@ export const projectData = {
 
       - Hand detection using MediaPipe hands and preparation tool detection
         using YOLO to identify candidate regions for food ingredients.
-        
       - Ingredient detection using a YOLO model trained on ingredient images of
         various categories.
 
@@ -191,7 +196,7 @@ export const projectData = {
         url: FruitNinjaPresentation,
       },
     ],
-    thumbnail: FruitNinjaGameplay,
+    thumbnail: FruitNinjaThumbnail,
     shortDesc:
       "A 3D interactive game environment utilizing gesture recognition and computer vision",
     images: [
@@ -290,7 +295,10 @@ export const projectData = {
     attachments: [
       { name: "Project Poster", url: PedestrianDetectionPoster },
       { name: "Project Paper", url: PedestrianDetectionPaper },
-      { name: "Project Final Presentation", url: PedestrianDetectionPresentation },
+      {
+        name: "Project Final Presentation",
+        url: PedestrianDetectionPresentation,
+      },
       { name: "Conference Certificate", url: PedestrianDetectionCertificate },
     ],
     thumbnail: PedestrianDetectionImage,

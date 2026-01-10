@@ -48,12 +48,10 @@ body {
   background-attachment: fixed;
   background-position: center;
 
-  /* Enforce global styling */
   background-color: var(--primary-blue);
   color: var(--text-main);
   line-height: var(--line-height-base);
   font-size: var(--default-text-size);
-
 }
 
 .app {
@@ -102,27 +100,11 @@ body {
 .left-icon {
   margin-right: 10px;
   font-size: 18px;
-  color: var(--text-main)
+  color: var(--text-main);
 }
 
 .right-icon {
   margin-left: 5px;
   font-size: 13px;
-  color: var(--text-muted)
-}
-
-@media (max-width: 900px) {
-  .content-page {
-    padding: 30px 20px;
-    padding-bottom: 50px;
-  }
-
-  .projects-page {
-    grid-template-columns: 1fr;
-    padding: 0;
-  }
-
-  .projects-toc {
-    display: none;
-  }
+  color: var(--text-muted);
 }
