@@ -16,7 +16,7 @@ const ProjectGrid = () => {
         >
           <div className="card-image-container">
             <img
-              src={project.thumbnail || project.image}
+              src={project.thumbnail}
               alt={project.title}
             />
           </div>

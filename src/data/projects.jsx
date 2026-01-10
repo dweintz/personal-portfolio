@@ -1,28 +1,28 @@
 import md from "dedent";
 
 // Nutrition Estimation project resources
-import project1Img1 from "../assets/nutrition/YOLO.png";
-import demogif from "../assets/nutrition/demogif.GIF";
-import research_talk from "../assets/nutrition/talk.pdf";
-import paper from "../assets/nutrition/paper.pdf";
+import NutritionEstimationDemo from "../assets/NutritionEstimation/NutritionEstimationDemo.gif"
+import NutritionEstimationDiagram from "../assets/NutritionEstimation/NutritionEstimationDiagram.png"
+import NutritionEstimationPaper from "../assets/NutritionEstimation/NutritionEstimationPaper.pdf"
+import NutritionEstimationTalk from "../assets/NutritionEstimation/NutritionEstimationTalk.pdf"
 
 // Model Registry project resources
-import site from "../assets/registry/site.png";
-import site2 from "../assets/registry/site2.png";
+import ModelRegistryDashboard from "../assets/ModelRegistry/ModelRegistryDashboard.png"
+import ModelRegistryArtifactDetails from "../assets/ModelRegistry/ModelRegistryArtifactDetails.png"
 
 // 3D Fruit Ninja project resources
-import ECE49595CV_Term_Project_Presentation from "../assets/fruit_ninja/ECE49595CV_Term_Project_Presentation.pdf";
-import gameplay from "../assets/fruit_ninja/gameplay.gif";
+import FruitNinjaGameplay from "../assets/FruitNinja/FruitNinjaGameplay.gif"
+import FruitNinjaPresentation from "../assets/FruitNinja/FruitNinjaPresentation.pdf"
 
 // Website project resources
-import website from "../assets/portfolio/homepage.png";
+import PersonalPortfolioHomepage from "../assets/PersonalPortfolio/PersonalPortfolioHomepage.png"
 
 // Pedestrian Detection project resources
-import certificate from "../assets/pedestrian/OUR_Certificates.pdf";
-import final_presentation from "../assets/pedestrian/Pedestrian_Detection_Accident_Avoidance_F24_Final_Presentation.pdf";
-import final_report from "../assets/pedestrian/Pedestrian_Detection_Accident_Avoidance_F24_Final_Report-compressed.pdf";
-import poster from "../assets/pedestrian/Research_Poster.pdf";
-import pedestrian1 from "../assets/pedestrian/pedestrian1.png";
+import PedestrianDetectionCertificate from "../assets/PedestrianDetection/PedestrianDetectionCertificate.pdf"
+import PedestrianDetectionImage from "../assets/PedestrianDetection/PedestrianDetectionImage.png"
+import PedestrianDetectionPaper from "../assets/PedestrianDetection/PedestrianDetectionPaper.pdf"
+import PedestrianDetectionPoster from "../assets/PedestrianDetection/PedestrianDetectionPoster.pdf"
+import PedestrianDetectionPresentation from "../assets/PedestrianDetection/PedestrianDetectionPresentation.pdf"
 
 export const projectData = {
   nutrition: {
@@ -48,21 +48,21 @@ export const projectData = {
       "Verbal Communication",
     ],
     attachments: [
-      { name: "Research Talk", url: research_talk },
-      { name: "Semester 1 Paper", url: paper },
+      { name: "Research Talk", url: NutritionEstimationTalk },
+      { name: "Semester 1 Paper", url: NutritionEstimationPaper },
       { name: "Cookware/Testing Dataset", url: "https://hd-epic.github.io/" },
       {
         name: "Ingredient Dataset",
         url: "https://lorenz.ecn.purdue.edu/~vfn/",
       },
     ],
-    thumbnail: demogif,
+    thumbnail: NutritionEstimationDemo,
     shortDesc:
       "A computer vision system for estimating recipe nutrition from egocentric cooking videos",
     images: [
-      { src: project1Img1, caption: "System Diagram", alt: "YOLO Detection" },
+      { src: NutritionEstimationDiagram, caption: "System Diagram", alt: "YOLO Detection" },
       {
-        src: demogif,
+        src: NutritionEstimationDemo,
         caption: "System Results on test video",
         alt: "Hand Object Detection",
       },
@@ -127,17 +127,17 @@ export const projectData = {
         url: "https://github.com/william-taoo/ECE461-Project-Phase2",
       },
     ],
-    thumbnail: site,
+    thumbnail: ModelRegistryDashboard,
     shortDesc:
       "Full-stack platform for tracking and evaluating machine learning models",
     images: [
       {
-        src: site,
+        src: ModelRegistryDashboard,
         caption: "Registry dashboard",
         alt: "Registry dashboard",
       },
       {
-        src: site2,
+        src: ModelRegistryArtifactDetails,
         caption: "Sample uploaded artifact",
         alt: "Sample uploaded artifact",
       },
@@ -188,15 +188,15 @@ export const projectData = {
       },
       {
         name: "Presentation",
-        url: ECE49595CV_Term_Project_Presentation,
+        url: FruitNinjaPresentation,
       },
     ],
-    thumbnail: gameplay,
+    thumbnail: FruitNinjaGameplay,
     shortDesc:
       "A 3D interactive game environment utilizing gesture recognition and computer vision",
     images: [
       {
-        src: gameplay,
+        src: FruitNinjaGameplay,
         caption: "Gameplay demo",
         alt: "Gameplay demo",
       },
@@ -254,12 +254,12 @@ export const projectData = {
         url: "https://github.com/dweintz/personal-portfolio",
       },
     ],
-    thumbnail: website,
+    thumbnail: PersonalPortfolioHomepage,
     shortDesc:
       "A responsive portfolio built with React to showcase software engineering projects",
     images: [
       {
-        src: website,
+        src: PersonalPortfolioHomepage,
         caption: "Portfolio Homepage",
         alt: "Portfolio Homepage",
       },
@@ -288,17 +288,17 @@ export const projectData = {
       "Support Vector Machines",
     ],
     attachments: [
-      { name: "Project Poster", url: poster },
-      { name: "Project Paper", url: final_report },
-      { name: "Project Final Presentation", url: final_presentation },
-      { name: "Conference Certificate", url: certificate },
+      { name: "Project Poster", url: PedestrianDetectionPoster },
+      { name: "Project Paper", url: PedestrianDetectionPaper },
+      { name: "Project Final Presentation", url: PedestrianDetectionPresentation },
+      { name: "Conference Certificate", url: PedestrianDetectionCertificate },
     ],
-    thumbnail: pedestrian1,
+    thumbnail: PedestrianDetectionImage,
     shortDesc:
       "Pedestrian detection system designed to enhance vehicle safety and pedestrian awareness",
     images: [
       {
-        src: pedestrian1,
+        src: PedestrianDetectionImage,
         caption:
           "Results of pedestrian detection and crash avoidance algorithm",
         alt: "Results of pedestrian detection and crash avoidance algorithm",

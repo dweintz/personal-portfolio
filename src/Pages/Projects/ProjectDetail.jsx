@@ -3,10 +3,11 @@ import { projectData } from "../../data/projects";
 import ProjectLayout from "./ProjectLayout";
 
 const ProjectDetail = () => {
-  const { projectId } = useParams(); // Grabs "personal-portfolio" from URL
+  const params = useParams();
+  const projectId = params.projectId;
+
   const project = projectData[projectId];
 
-  // Safety check: if the project doesn't exist, send back to the list
   if (!project) {
     return <Navigate to="/projects" replace />;
   }

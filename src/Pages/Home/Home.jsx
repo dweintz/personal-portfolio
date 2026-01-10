@@ -1,5 +1,5 @@
 import "./Home.css";
-import mePic from "../../assets/me_no_background.png";
+import mePic from "../../assets/headshot.png";
 
 const Home = () => {
   return (

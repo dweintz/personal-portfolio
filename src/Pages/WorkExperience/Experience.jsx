@@ -3,15 +3,15 @@ import { parseMarkdown } from "../../utils/markdownParser.jsx";
 import md from "dedent";
 import "./Experience.css";
 
-import geLogo from "../../assets/logos/ge_logo.png";
-import costcoLogo from "../../assets/logos/costco_logo.png";
-import chipotleLogo from "../../assets/logos/chipotle_logo.png";
+import GEAerospaceLogo from "../../assets/CompanyLogos/GEAerospaceLogo.png";
+import CostcoLogo from "../../assets/CompanyLogos/CostcoLogo.png";
+import chipotleLogo from "../../assets/CompanyLogos/ChipotleLogo.png";
 
 const workHistory = [
   {
     id: 1,
     company: "GE Aerospace",
-    logo: geLogo,
+    logo: GEAerospaceLogo,
     role: "Supply Chain and Manufacturing Intern",
     location: "Evendale, OH",
     duration: "May 2025 – Aug 2025",
@@ -52,7 +52,7 @@ const workHistory = [
   {
     id: 2,
     company: "GE Aerospace",
-    logo: geLogo, // Reusing logo for rotation
+    logo: GEAerospaceLogo,
     role: "Inspection Engineering Intern",
     location: "Evendale, OH",
     duration: "May 2024 – Aug 2024",
@@ -85,7 +85,7 @@ const workHistory = [
   {
     id: 3,
     company: "Costco Wholesale",
-    logo: costcoLogo,
+    logo: CostcoLogo,
     role: "Front End Assistant",
     location: "Cincinnati, OH",
     duration: "May 2023 – Jan 2025",
