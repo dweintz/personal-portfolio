@@ -1,30 +1,17 @@
 nav.container {
   width: 100%;
+  min-height: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 20px;
-  background-color: rgb(27, 47, 68);
+  padding: 15px 10%;
+  background-color: var(--primary-blue);
   backdrop-filter: blur(6px);
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
-}
-
-nav {
-  width: 100%;
-  color: #fff;
-  padding: 20px 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 10;
-  box-shadow: 0 4px 16px rgba(27, 47, 68, 0.15);
-  min-height: 75px;
+  box-shadow: var(--border-shadow);
 }
 
 nav ul {
@@ -35,19 +22,13 @@ nav ul {
   padding: 0;
 }
 
-nav ul li {
-  display: inline-block;
-  list-style: none;
-  margin: 5px 15px;
-  font-size: 19px;
-  position: relative;
-}
-
 nav ul li a {
   text-decoration: none;
   color: white;
   padding: 5px 15px;
+  font-size: 19px;
   position: relative;
+  transition: color 0.3s ease;
 }
 
 nav ul li a::after {
@@ -61,45 +42,22 @@ nav ul li a::after {
   transition: width 0.3s ease;
 }
 
-nav ul li a:hover::after {
-  width: 100%;
-}
-
+nav ul li a:hover::after,
 nav ul li a.active::after {
   width: 100%;
-}
-
-.container {
-  padding-left: 10%;
-  padding-right: 10%;
 }
 
 @media (max-width: 900px) {
   nav.container {
     position: relative;
-    background-color: rgb(27, 47, 68);
-  }
-
-  nav {
-    position: relative;
-    margin-bottom: 20px;
-    background-color: rgb(27, 47, 68);
+    padding: 15px 20px;
+    margin-bottom: 30px;
   }
 
   nav ul {
     flex-direction: column;
-
     gap: 18px;
+    padding: 15px 0;
     align-items: center;
-    padding-bottom: 15px;
-  }
-
-  nav ul li {
-    font-size: 19px;
-  }
-
-  nav ul li a::after {
-    bottom: -2px;
-    height: 2px;
   }
 }

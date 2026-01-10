@@ -15,7 +15,7 @@
   border: 2px solid var(--border-color);
   border-radius: 20px;
   box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.09);
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: var(--default-transition);
 }
 
 .home-box-left {
@@ -55,18 +55,23 @@
 @media (max-width: 900px) {
   .home-box {
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 0px;
     align-items: left;
   }
 
-  .about-left {
+  .home-box-left {
     min-height: 0;
   }
 
-  .about-left img {
+  .home-box-left img {
     position: static;
     display: block;
     max-width: 250px;
-    padding-top: 50px;
+    padding-top: 20px;
+    border-radius: 0px 0 0 0;
+  }
+
+  .horizontal-line {
+    border: 2px solid var(--primary-blue);
   }
 }

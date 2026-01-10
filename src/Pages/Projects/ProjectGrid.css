@@ -12,6 +12,7 @@
   padding-left: 50px;
   padding-right: 50px;
   justify-content: center;
+  transition: var(--default-transition);
 }
 
 .project-card-link {

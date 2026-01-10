@@ -7,6 +7,7 @@ const Home = () => {
       <div className="home-box-left">
         <img src={mePic} alt="My Professional Headshot" />
       </div>
+      <div className="horizontal-line"></div>
 
       <article className="home-box-right">
         <h2>Hello!</h2>
