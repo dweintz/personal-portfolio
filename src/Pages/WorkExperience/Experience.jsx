@@ -1,10 +1,8 @@
-import React from "react";
 import { FaMapMarkerAlt, FaCalendarAlt } from "react-icons/fa";
 import { parseMarkdown } from "../../utils/markdownParser.jsx";
 import md from "dedent";
 import "./Experience.css";
 
-// Import your logos
 import geLogo from "../../assets/logos/ge_logo.png";
 import costcoLogo from "../../assets/logos/costco_logo.png";
 import chipotleLogo from "../../assets/logos/chipotle_logo.png";

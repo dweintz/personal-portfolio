@@ -1,3 +1,17 @@
+nav.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: rgb(27, 47, 68);
+  backdrop-filter: blur(6px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
 nav {
   width: 100%;
   color: #fff;
@@ -61,6 +75,11 @@ nav ul li a.active::after {
 }
 
 @media (max-width: 900px) {
+  nav.container {
+    position: relative;
+    background-color: rgb(27, 47, 68);
+  }
+
   nav {
     position: relative;
     margin-bottom: 20px;

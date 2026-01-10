@@ -89,14 +89,13 @@
   text-decoration: underline;
 }
 
-
 @media (max-width: 900px) {
   .contact-page {
     margin-top: 0px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 20px; 
+    padding-top: 20px;
     align-items: center;
   }
 

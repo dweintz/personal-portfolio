@@ -1,5 +1,3 @@
-import React from "react";
-
 export const parseMarkdown = (markdown) => {
   if (!markdown || typeof markdown !== "string") return null;
 

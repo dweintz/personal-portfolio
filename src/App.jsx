@@ -1,20 +1,14 @@
 import { Routes, Route } from "react-router-dom";
+
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
-import Home from "./Pages/Home/Home";
-import WorkExperience from "./Pages/WorkExperience/WorkExperience";
-import Projects from "./Pages/Projects/Projects";
 
-import NutritionProject from "./Pages/Projects/ProjectBoxes/NutritionProject";
-import RegistryProject from "./Pages/Projects/ProjectBoxes/RegistryProject";
-import FruitNinjaProject from "./Pages/Projects/ProjectBoxes/FruitNinjaProject";
-import WebsiteProject from "./Pages/Projects/ProjectBoxes/WebsiteProject";
-import PedestrianProject from "./Pages/Projects/ProjectBoxes/PedestrianProject";
+import Home from "./Pages/Home/Home";
+import Experience from "./Pages/WorkExperience/Experience";
+import ProjectsGrid from "./Pages/Projects/ProjectGrid";
+import ProjectDetail from "./Pages/Projects/ProjectDetail";
 import Contact from "./Pages/Contact/Contact";
 
-import ProjectsGrid from "./Pages/Projects/ProjectGrid";
-import Experience from "./Pages/WorkExperience/Experience";
-import AboutMe from "./Pages/AboutMe/AboutMe";
 import "./index.css";
 
 const App = () => {
@@ -27,11 +21,7 @@ const App = () => {
           <Route path="/work" element={<Experience />} />
           <Route path="/projects" element={<ProjectsGrid />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/projects/nutrition" element={<NutritionProject />} />
-          <Route path="/projects/registry" element={<RegistryProject />} />
-          <Route path="/projects/fruitninja" element={<FruitNinjaProject />} />
-          <Route path="/projects/website" element={<WebsiteProject />} />
-          <Route path="/projects/pedestrian" element={<PedestrianProject />} />
+          <Route path="/projects/:projectId" element={<ProjectDetail />} />
         </Routes>
       </main>
       <Footer />
